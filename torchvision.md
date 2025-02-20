@@ -1,0 +1,2 @@
+TorchVision (torchvision) **安装的内容：** torchvision 是 PyTorch 的一个扩展库，提供了计算机视觉中常用的数据集（如 MNIST、CIFAR）、预训练模型（如 ResNet、VGG），以及常用的图像处理功能（如数据增强、图像转换）。 **用途：** 在进行计算机视觉任务时，torchvision 提供了图像处理的工具（比如加载、预处理、转换图像数据）和预训练模型，能帮助你更快速地构建视觉相关的应用。
+ **torchvision** 是 **PyTorch 处理计算机视觉数据的库**，包括 **常见数据集（MNIST、CIFAR-10等）、预训练模型、数据增强等**。
