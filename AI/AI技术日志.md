@@ -93,9 +93,9 @@
 	Loss: 0.12767164409160614 
 	**如何理解这个输出？** **Epoch 1 → Loss: 0.1532** **Epoch 2 → Loss: 0.1603（比上一轮稍微大了一点）** **Epoch 3 → Loss: 0.1276（下降了，说明模型在学习）** 通常，训练过程中 **Loss 逐渐降低**，说明模型在逐步优化。 但如果 **Loss 反复增减**，可能是： **学习率过大**：模型在不同方向上跳跃，收敛不稳定。 **数据噪声大**：数据本身有随机性，导致损失值波动。 **过拟合或欠拟合**：模型可能学得太好或太差。
 
-● 代码解释：该代码使用了PyTorch训练一个简单神经网络来识别手写数字
+● 代码解释：该代码使用了PyTorch训练一个简单神经网络来识别手写数字，用到的[[python语法规则]]
 
-● 导入部分：import 语句是**Python 导入库（modules）**的操作，主要用于 **PyTorch 深度学习** 相关任务。
+● 导入部分：import 语句是**Python 导入库（modules）的操作，主要用于 PyTorch 深度学习 相关任务。
 
 ● import [[torch]]
 
@@ -108,15 +108,21 @@
 ● import [[torch.optim]] as optim import matplotlib.pyplot as plt
 
 
-● 1. 加载 MNIST 数据集
+● 1. 定义转换规则和加载 MNIST 数据集
 
 ● transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
 
- - transforms.Compose([...]) **作用**：把多个转换操作组合在一起，形成一个完整的**预处理管道**。  transforms.ToTensor()**作用**： 把 **PIL 图片** 或 **NumPy 数组** 转换成 **PyTorch 的 Tensor（张量）**。 同时，会把图片像素值 **从 (0 ~ 255) 归一化到 (0 ~ 1)**。
+ - transforms.Compose([...]) **作用**：把多个转换操作组合在一起，形成一个完整的**预处理管道**。  transforms.ToTensor()**作用**： 把 **[[PIL 图片]]** 或 **[[NumPy 数组]]** 转换成 **PyTorch 的 Tensor（张量）**。 同时，会把[[图片像素值]] *从 (0 ~ 255) [[归一化]]到 (0 ~ 1)**。
 
--  trainset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transform)
+● trainset = torchvision.datasets.MNIST([[root]]='./data', [[train=True]], [[download=True]], transform=transform)加载数据集，[[MNIST 数据集]]中的图片**原始格式是 PIL 图片**（Python Imaging Library）。当 `transform` 里使用 `ToTensor()` 之后，PIL 图片就会转换成 PyTorch 的 `Tensor`，变成数值化的数据，方便进行**归一化、输入神经网络**等操作。 **`transform=transform`
+***应用 `transform` 预处理**：
+    - `transform=transform` 让加载的图片**自动转换为 Tensor，并进行归一化**。
 
-● trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
+● trainloader = [[torch.utils.data.DataLoader]](trainset, batch_size=64, shuffle=True)
+
+●2.可视化一个图片
+●images, labels = next(iter(trainloader))
+
 
 ● 补充
 
