@@ -1,0 +1,1 @@
+**JPEG**（全称：**Joint Photographic Experts Group**）是一个图像压缩标准和图像格式的名称，通常用于压缩数字图像，尤其是照片。这个标准是由联合图像专家组（JPEG）制定的。

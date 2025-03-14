@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/AI技术日志.md",
+                "file": "flashcards-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI技术日志"
+              "title": "flashcards-1"
+            }
+          },
+          {
+            "id": "6abba903500eb0d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "闪卡/python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python"
             }
           },
           {
@@ -27,16 +41,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "通信电子线路/易混淆的概念.md",
+                "file": "电磁波.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "易混淆的概念"
+              "title": "电磁波"
+            }
+          },
+          {
+            "id": "18addf1d74e26da5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "为什么模拟信号通常是连续的电压信号？"
+            }
+          },
+          {
+            "id": "cd2fba4c56b46d71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "闪卡/python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python"
+            }
+          },
+          {
+            "id": "e2e9cb62d49ae422",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "闪卡/python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -68,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#概念记忆-2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +132,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -89,7 +145,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -160,8 +217,19 @@
               "icon": "lucide-list",
               "title": "Outline of Welcome"
             }
+          },
+          {
+            "id": "1fd81c3300e22903",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "笔记复习序列"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -175,21 +243,40 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-spaced-repetition:复习卡片": false
     }
   },
-  "active": "786b68b15726b050",
+  "active": "1fd81c3300e22903",
   "lastOpenFiles": [
-    "通信电子线路/频率.md",
-    "通信电子线路/易混淆的概念.md",
-    "通信电子线路",
+    "闪卡/flashcards-1.md",
+    "闪卡/命令行.md",
+    "闪卡/python.md",
+    "Pasted image 20250313080705.png",
+    "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
+    "闪卡",
+    "JPEG.md",
+    "Pasted image 20250305135927.png",
+    "Pasted image 20250305135134.png",
+    "{0C8E3C27-C0F8-4ED9-9A79-1151FCC3E7E1}.png",
+    "电压电阻和电流.md",
+    "频率.md",
+    "AD转换.md",
+    "jpg.md",
     "C和C++技术日志.md",
+    "电磁波.md",
+    "A/D转换.md",
+    "通信电子线路/理清概念.md",
+    "AI/AI技术日志.md",
+    "信号与系统/为什么",
+    "A",
+    "信号与系统",
+    "通信电子线路",
     "AI/download=True.md",
     "AI/图片像素值.md",
     "AI/{249BE32B-CE45-4889-9AAA-240B37585B37}.png",
     "AI/归一化.md",
     "AI",
-    "AI/AI技术日志.md",
     "AI/python语法规则.md",
     "AI/matplotlib.md",
     "AI/torch.utils.data.DataLoader.md",
@@ -199,14 +286,6 @@
     "AI/root.md",
     "AI/NumPy 数组.md",
     "AI/{46942CAB-FC18-4717-AA93-19AB7E9D29B7}.png",
-    "AI/python解释器.md",
-    "Welcome.md",
-    "AI/PIL 图片.md",
-    "AI/torchvision.md",
-    "AI/transforms.md",
-    "AI/torch.optim.md",
-    "AI/torch.nn.md",
-    "AI/torch.md",
-    "AI/pip.md"
+    "AI/python解释器.md"
   ]
 }
