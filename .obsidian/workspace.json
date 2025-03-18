@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c2f87a66b66af172",
+            "id": "6abba903500eb0d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "flashcards-1.md",
+                "file": "闪卡/flashcards-1.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "6abba903500eb0d3",
+            "id": "2d67a26369fc10c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#概念记忆-2",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -145,12 +145,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ac1a90edddb06f3f",
@@ -247,18 +246,26 @@
       "obsidian-spaced-repetition:复习卡片": false
     }
   },
-  "active": "1fd81c3300e22903",
+  "active": "2d67a26369fc10c3",
   "lastOpenFiles": [
+    "Pasted image 20250318162248.png",
+    "Pasted image 20250318162218.png",
     "闪卡/flashcards-1.md",
+    "Pasted image 20250316122521.png",
+    "闪卡/“未解之谜”.md",
     "闪卡/命令行.md",
+    "Pasted image 20250316114635.png",
+    "Pasted image 20250316110619.png",
+    "Pasted image 20250316110457.png",
+    "Pasted image 20250316110342.png",
     "闪卡/python.md",
+    "Pasted image 20250315112017.png",
+    "Pasted image 20250315111848.png",
     "Pasted image 20250313080705.png",
     "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
     "闪卡",
     "JPEG.md",
     "Pasted image 20250305135927.png",
-    "Pasted image 20250305135134.png",
-    "{0C8E3C27-C0F8-4ED9-9A79-1151FCC3E7E1}.png",
     "电压电阻和电流.md",
     "频率.md",
     "AD转换.md",
@@ -274,7 +281,6 @@
     "通信电子线路",
     "AI/download=True.md",
     "AI/图片像素值.md",
-    "AI/{249BE32B-CE45-4889-9AAA-240B37585B37}.png",
     "AI/归一化.md",
     "AI",
     "AI/python语法规则.md",
@@ -283,9 +289,6 @@
     "AI/MNIST 数据集.md",
     "AI/灰度图.md",
     "AI/train=True.md",
-    "AI/root.md",
-    "AI/NumPy 数组.md",
-    "AI/{46942CAB-FC18-4717-AA93-19AB7E9D29B7}.png",
-    "AI/python解释器.md"
+    "AI/root.md"
   ]
 }
