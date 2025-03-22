@@ -38,7 +38,7 @@ favorite_language.lstrip()
 'python '
 favorite_language.strip()
 'python'
-<!--SR:!2025-03-22,2,230-->
+<!--SR:!2025-03-29,7,250-->
 
 8.使用什么表示乘方运算
 ?
@@ -83,14 +83,14 @@ del motorcycles[0]
 print(motorcycles)
 ['honda', 'yamaha', 'suzuki']
 ['yamaha', 'suzuki']
-<!--SR:!2025-03-22,2,250-->
+<!--SR:!2025-03-27,5,250-->
 
 15.删除列表末尾的值，但是后期还需要使用它:motorcycles = ['honda', 'yamaha', 'suzuki']
 ?
 popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
-<!--SR:!2025-03-22,2,230-->
+<!--SR:!2025-03-29,7,250-->
 
 16.想使用pop()删除列表中任何位置的元素：
 ?
@@ -116,7 +116,7 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print(motorcycles)
 print("\nA " + too_expensive.title() + " is too expensive for me.")
-<!--SR:!2025-03-22,2,230-->
+<!--SR:!2025-03-29,7,250-->
 
 19.SyntaxError: Non-UTF-8 code starting with '\xb4' in file D:\wait_what\Documents\python_work\python\Chapter03\list_2.py on line 2, but no encoding declared; see https://peps.python.org/pep-0263/ for details
 ?
@@ -150,7 +150,7 @@ print(sorted(cars,reverse=True))
 24.反转列表的排列顺序，有何特点？（不用sort)
 ?
 cars.reverse(),永久性，但是再调用一次即可恢复
-<!--SR:!2025-03-22,1,170-->
+<!--SR:!2025-03-24,2,170-->
 
 25.确定列表长度？
 ?
@@ -304,13 +304,13 @@ for value in user_0.values()
 ?
 for name in sorted(favorite_languages.keys()):
 print(name.title() + ", thank you for taking the poll.")
-<!--SR:!2025-03-22,1,236-->
+<!--SR:!2025-03-23,1,216-->
 
 52.如何对字典中的值精简输出，不重复：
 ?
 for language in set(favorite_languages.values()):
 print(language.title())
-<!--SR:!2025-03-22,1,236-->
+<!--SR:!2025-03-24,2,236-->
 
 53.TypeError: 'int' object is not iterable什么意思？
 ?
@@ -318,6 +318,7 @@ print(language.title())
 num = 5
 for i in num:  # 错误！int 不可迭代
     print(i)
+<!--SR:!2025-03-25,3,256-->
 
 54.列表中存储字典,并且打印出来：
 ?
@@ -327,19 +328,22 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
 print(alien)
+<!--SR:!2025-03-23,1,236-->
 
 55.在字典pizza中存储toppings列表,并且打印出来：
 ?
-pizza = { 
-  'crust': 'thick', 
-  'toppings': ['mushrooms', 'extra cheese'], 
+pizza = {
+  'crust': 'thick',
+  'toppings': ['mushrooms', 'extra cheese'],
   }
 for topping in pizza[[['toppings' ]]]:
 print("\t" + topping)
+<!--SR:!2025-03-23,1,236-->
 
 56.字典中的items()只是返回：
 ?
 key和value两个类型值，是键值对的形式，不是有多少个键值对
+<!--SR:!2025-03-25,3,256-->
 
 57.字典中存字典,并且访问字典里面的字典中的值：
 ?
@@ -359,6 +363,62 @@ for username, user_info in users.items():
 print("\nUsername: " + username)
 full_name = user_info['first'] + " " + user_info['last']
 location = user_info['location']
+<!--SR:!2025-03-23,1,236-->
 
-58.
+58.input的用法？比如让用户输入姓名？
+?
+name=input("Please enter your name: ")
+print=("Hello, "+name+"!")
 
+59.除了name=input("Please enter your name: ")，还有?多行的提示输入怎么弄？
+?
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is your first name? "
+name=input(prompt)
+
+60.使用函数input时，python将用户输入解读为？
+?
+字符串
+
+61.将用户输入的字符串转换成数值,以方便进行数值上的条件比较：
+?
+age=int(age)
+
+62.在要求很多条件都满足才继续运行的程序中，可定义一个变量，用于判断整个程序是否处于活动状态。这个变量被称为?
+?
+active,标志，当active=True时，循环继续进行，当为False时结束循环
+
+63.什么让Python忽略余下的代码，并返回到循环的开头
+?
+continue
+
+64.如果程序陷入无限循环，可按____或者____
+?
+Ctrl+C或者直接关闭终端窗口
+
+65.创建一个不为空一个为空的列表，然后将这个列表迁移至另一个空列表如果迁移未结束则进行循环的while后面跟的条件是什么？
+?
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
+while unconfirmed_users:
+
+66.用while删除列表里某一个值（重复的值）：pets=['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+?
+while 'cat' in pets:
+pets.remove('cat')
+
+67.在while循环中怎么将用户输入的信息存储在一个字典中？
+?
+name = input("\nWhat is your name? ")
+response = input("Which mountain would you like to climb someday? ")
+responses[name] = response
+
+68.进行问卷调查时怎么结束调查？
+?
+repeat = input("Would you like to let another person respond? (yes/ no) ")
+if repeat == 'no':
+polling_active = False#在前面定义
+
+69.当调查结束时，为了显示调查结果而写的提示信息：
+?
+print("\n--- Poll Results ---")

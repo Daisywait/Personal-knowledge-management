@@ -4,51 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "24e409da7e19036b",
+        "id": "a1cf6685fcf12021",
         "type": "tabs",
         "children": [
-          {
-            "id": "6abba903500eb0d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "闪卡/flashcards-1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "flashcards-1"
-            }
-          },
-          {
-            "id": "786b68b15726b050",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "电磁波.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "电磁波"
-            }
-          },
-          {
-            "id": "18addf1d74e26da5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "为什么模拟信号通常是连续的电压信号？"
-            }
-          },
           {
             "id": "cd2fba4c56b46d71",
             "type": "leaf",
@@ -62,23 +20,8 @@
               "icon": "lucide-file",
               "title": "python"
             }
-          },
-          {
-            "id": "e2e9cb62d49ae422",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "闪卡/flashcards-1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "flashcards-1"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ac1a90edddb06f3f",
@@ -243,7 +187,7 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "8ac2dbe8e94ce222",
+  "active": "cd2fba4c56b46d71",
   "lastOpenFiles": [
     "闪卡/flashcards-1.md",
     "闪卡/命令行.md",
