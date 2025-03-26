@@ -212,7 +212,7 @@ print(squares)
 34.players = ['charles', 'martina', 'michael', 'florence', 'eli']只打印列表前三个元素、2~4个元素：
 ?
 print(players[0:3])、print(players[1:4])
-<!--SR:!2025-03-26,2,234-->
+<!--SR:!2025-03-27,1,214-->
 
 35.print(players[:4])表示？print(players[2:])呢
 ?
@@ -262,7 +262,7 @@ alien_0 = {'color': 'green','points':5}
 print(alien_0['color'])
 print(alien_0['points'])
 print(alien_0)
-<!--SR:!2025-03-26,2,236-->
+<!--SR:!2025-03-31,5,236-->
 
 44.在字典alien_0中添加两项信息：外星人的x坐标和y坐标
 ?
@@ -293,7 +293,7 @@ for key, value in user_0.items():
 49.如何遍历字典中所有的键？
 ?
 for key in user_0.keys()
-<!--SR:!2025-03-26,2,236-->
+<!--SR:!2025-04-02,7,256-->
 
 50.如何遍历字典中所有的值？
 ?
@@ -304,7 +304,7 @@ for value in user_0.values()
 ?
 for name in sorted(favorite_languages.keys()):
 print(name.title() + ", thank you for taking the poll.")
-<!--SR:!2025-03-26,1,196-->
+<!--SR:!2025-03-29,3,216-->
 
 52.如何对字典中的值精简输出，不重复：
 ?
@@ -338,7 +338,7 @@ pizza = {
   }
 for topping in pizza[[['toppings' ]]]:
 print("\t" + topping)
-<!--SR:!2025-03-26,2,216-->
+<!--SR:!2025-03-30,4,216-->
 
 56.字典中的items()只是返回：
 ?
@@ -363,7 +363,7 @@ for username, user_info in users.items():
 print("\nUsername: " + username)
 full_name = user_info['first'] + " " + user_info['last']
 location = user_info['location']
-<!--SR:!2025-03-26,1,216-->
+<!--SR:!2025-03-28,2,216-->
 
 58.input的用法？比如让用户输入姓名？
 ?
@@ -376,7 +376,7 @@ print=("Hello, "+name+"!")
 prompt = "If you tell us who you are, we can personalize the messages you see."
 prompt += "\nWhat is your first name? "
 name=input(prompt)
-<!--SR:!2025-03-26,3,256-->
+<!--SR:!2025-04-06,11,276-->
 
 60.使用函数input时，python将用户输入解读为？
 ?
@@ -386,7 +386,7 @@ name=input(prompt)
 61.将用户输入的字符串转换成数值,以方便进行数值上的条件比较：
 ?
 age=int(age)
-<!--SR:!2025-03-26,3,256-->
+<!--SR:!2025-04-07,12,276-->
 
 62.在要求很多条件都满足才继续运行的程序中，可定义一个变量，用于判断整个程序是否处于活动状态。这个变量被称为?
 ?
@@ -396,7 +396,7 @@ active,标志，当active=True时，循环继续进行，当为False时结束循
 63.什么让Python忽略余下的代码，并返回到循环的开头
 ?
 continue
-<!--SR:!2025-03-26,3,256-->
+<!--SR:!2025-04-07,12,276-->
 
 64.如果程序陷入无限循环，可按____或者____
 ?
@@ -408,7 +408,7 @@ Ctrl+C或者直接关闭终端窗口
 unconfirmed_users = ['alice', 'brian', 'candace']
 confirmed_users = []
 while unconfirmed_users:
-<!--SR:!2025-03-26,3,256-->
+<!--SR:!2025-04-07,12,276-->
 
 66.用while删除列表里某一个值（重复的值）：pets=['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
 ?
@@ -428,7 +428,7 @@ responses[name] = response
 repeat = input("Would you like to let another person respond? (yes/ no) ")
 if repeat == 'no':
 polling_active = False#在前面定义
-<!--SR:!2025-03-26,3,256-->
+<!--SR:!2025-03-28,2,236-->
 
 69.当调查结束时，为了显示调查结果而写的提示信息：
 ?
@@ -463,7 +463,7 @@ def
 75.使用位置实参来调用函数时，要注意：
 ?
 确认函数调用中实参的顺序和函数定义中形参的顺序一致
-<!--SR:!2025-03-26,1,242-->
+<!--SR:!2025-03-29,3,262-->
 
 76.关键字实参是什么
 ?
@@ -510,12 +510,12 @@ return full_name.title()
 83.如果遇到while循环条件是True，要怎么设计退出？
 ?
 当满足一定条件后使用break,所以要提前告诉用户可以退出的办法，在循环内使用if进行条件判断，如果符合那么break
-<!--SR:!2025-03-26,1,242-->
+<!--SR:!2025-03-28,2,242-->
 
 84.函数怎么传递列表？
 ?
 直接函数名(列表名)
-<!--SR:!2025-03-26,1,242-->
+<!--SR:!2025-03-29,3,262-->
 
 85.将列表传递给函数后，函数对其修改，这些修改都是？
 ?
@@ -530,7 +530,7 @@ return full_name.title()
 87.怎么传递任意数量的实参？
 ?
 def make_pizza(*  toppings):形参名* toppings中的星号让Python创建一个名为toppings的空元组，并将收到的所有值都封装到这个元组中。(注意星号和形参之间没有空格，只是obsidian的格式问题)
-<!--SR:!2025-03-26,1,241-->
+<!--SR:!2025-03-29,3,261-->
 
 88.怎么传递任意数量的关键字实参？
 ?
@@ -551,7 +551,123 @@ mn.function()
 function()
 <!--SR:!2025-03-28,3,261-->
 
-90.
+90.在Python中，首字母大写的名称指的是？
+?
+类
 
+91.class Dog():这个类定义中的括号是空的，说明？
+?
+没有继承任何类，是从空白开始创建这个类
 
+92.创建类时，第一个要写的方法是？必不可少的形参是？
+?
+def __ init __ (self,name,age),self是必不可少的形参，还必须位于其他形参前面
 
+93.怎么初始化属性：def __ init __ (self,name,age)
+?
+self.name = name
+self.age = age
+
+94.除了initi这个方法之外，在写其他方法时，必不可少的形参是？
+?
+self
+
+95.我们通常可以认为首字母大写的名称（如
+Dog）指的是类，而小写的名称（如my_dog）指的是?
+?
+根据类创建的实例
+
+96.创建了实例my_dog之后该怎么访问属性？self.name = name
+self.age = age
+?
+用句点表示法来获取属性，比如：my_dog.name
+
+97.创建了实例my_dog之后该怎么调用方法？
+?
+my_dog.roll_over()
+
+98.如果在方法init中添加了一个新属性，并且设置了初始值，如self.odometer_reading = 0，那么？
+?
+不需要提供形参
+
+99.怎么修改属性的值?
+?
+①my_new_car.odometer_reading = 23
+②通过方法修改：def update_odometer(self, mileage):
+"""将里程表读数设置为指定的值"""
+self.odometer_reading = mileage
+my_new_car.update_odometer(23)
+
+100.class ElectricCar(Car):创建子类时，在init方法中def __ init __ (self, make, model, year):首先要：
+?
+初始化父类的属性：super().__ init __ (make, model, year)
+
+101.如果我们在子类中添加了新的属性，根据子类创建的实例中会有吗？父类呢？
+?
+子类会有，但是父类不会有
+
+102.当调用子类创建实例时，如果用的是和父类中一样的方法，那么？
+?
+Python只关注子类中定义的
+
+103.如果创建了类Battery,要怎么在类ElectricCar中将属性设置为该类？即根据这个类来创建实例，并把这个实例当作属性
+?
+self.battery = Battery()
+
+104.将实例当作属性之后self.battery = Battery()要怎么调用方法Battery中的方法？
+?
+my_tesla.battery.describe_battery()
+
+105.怎么导入模块（其实就是一个文件）中的类？
+?
+from car import Car
+
+106.怎么从一个模块中导入多个类？
+?
+from car import Car, ElectricCar
+
+107.怎么导入整个模块？
+?
+from car import Car, ElectricCar
+
+108.from module_name import * 这是什么意思？
+?
+
+109.怎么创建一个有序的字典？
+?
+favorite_languages = OrderedDict()
+favorite_languages['jen'] = 'python'
+favorite_languages['sarah'] = 'c'
+favorite_languages['edward'] = 'ruby'
+favorite_languages['phil'] = 'python'
+
+110.生成随机数的函数在什么模块里？
+?
+random
+
+111.random模块里有一个函数可以返回一个位于指定范围的整数，该函数是什么，该怎么使用该函数进行随机数生成？
+?
+from random import randint
+x = randint(1, 6)
+
+112.在类中，可以用几个空行分隔方法？
+?
+一个
+
+113.在模块中，可以用几个空行分隔类？
+?
+两个
+
+114.在导入模块时，顺序一般是？两种模块之间该怎么区分？
+?
+先编写导入标准库模块的import语句，再添加一个空行，然后编写导入你自己编写的模块的import语句
+
+115.UnicodeDecodeError: 'gbk' codec can't decode byte 0x9d in position 1856: illegal multibyte sequence这是什么错误？该怎么解决？
+?
+```python
+with open('somefile.txt', encoding='utf-8') as f_object:
+    contents = f_object.read()
+print(contents)
+```
+
+116.
