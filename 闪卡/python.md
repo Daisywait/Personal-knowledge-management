@@ -83,7 +83,7 @@ del motorcycles[0]
 print(motorcycles)
 ['honda', 'yamaha', 'suzuki']
 ['yamaha', 'suzuki']
-<!--SR:!2025-03-27,5,250-->
+<!--SR:!2025-04-14,18,270-->
 
 15.删除列表末尾的值，但是后期还需要使用它:motorcycles = ['honda', 'yamaha', 'suzuki']
 ?
@@ -145,7 +145,7 @@ sorted(cars)
 ?
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(sorted(cars,reverse=True))
-<!--SR:!2025-03-27,7,250-->
+<!--SR:!2025-04-21,25,270-->
 
 24.反转列表的排列顺序，有何特点？（不用sort)
 ?
@@ -212,7 +212,7 @@ print(squares)
 34.players = ['charles', 'martina', 'michael', 'florence', 'eli']只打印列表前三个元素、2~4个元素：
 ?
 print(players[0:3])、print(players[1:4])
-<!--SR:!2025-03-27,1,214-->
+<!--SR:!2025-03-30,3,234-->
 
 35.print(players[:4])表示？print(players[2:])呢
 ?
@@ -328,7 +328,7 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
 print(alien)
-<!--SR:!2025-03-27,3,236-->
+<!--SR:!2025-03-29,2,216-->
 
 55.在字典pizza中存储toppings列表,并且打印出来：
 ?
@@ -369,7 +369,7 @@ location = user_info['location']
 ?
 name=input("Please enter your name: ")
 print=("Hello, "+name+"!")
-<!--SR:!2025-03-27,4,276-->
+<!--SR:!2025-04-11,15,296-->
 
 59.除了name=input("Please enter your name: ")，还有?多行的提示输入怎么弄？
 ?
@@ -381,7 +381,7 @@ name=input(prompt)
 60.使用函数input时，python将用户输入解读为？
 ?
 字符串
-<!--SR:!2025-03-27,3,256-->
+<!--SR:!2025-04-08,12,276-->
 
 61.将用户输入的字符串转换成数值,以方便进行数值上的条件比较：
 ?
@@ -391,7 +391,7 @@ age=int(age)
 62.在要求很多条件都满足才继续运行的程序中，可定义一个变量，用于判断整个程序是否处于活动状态。这个变量被称为?
 ?
 active,标志，当active=True时，循环继续进行，当为False时结束循环
-<!--SR:!2025-03-27,4,276-->
+<!--SR:!2025-03-29,2,256-->
 
 63.什么让Python忽略余下的代码，并返回到循环的开头
 ?
@@ -401,7 +401,7 @@ continue
 64.如果程序陷入无限循环，可按____或者____
 ?
 Ctrl+C或者直接关闭终端窗口
-<!--SR:!2025-03-27,4,276-->
+<!--SR:!2025-04-11,15,296-->
 
 65.创建一个不为空一个为空的列表，然后将这个列表迁移至另一个空列表如果迁移未结束则进行循环的while后面跟的条件是什么？
 ?
@@ -414,14 +414,14 @@ while unconfirmed_users:
 ?
 while 'cat' in pets:
 pets.remove('cat')
-<!--SR:!2025-03-27,4,276-->
+<!--SR:!2025-04-08,12,276-->
 
 67.在while循环中怎么将用户输入的信息存储在一个字典中？
 ?
 name = input("\nWhat is your name? ")
 response = input("Which mountain would you like to climb someday? ")
 responses[name] = response
-<!--SR:!2025-03-27,3,256-->
+<!--SR:!2025-04-04,8,256-->
 
 68.进行问卷调查时怎么结束调查？
 ?
@@ -433,7 +433,7 @@ polling_active = False#在前面定义
 69.当调查结束时，为了显示调查结果而写的提示信息：
 ?
 print("\n--- Poll Results ---")
-<!--SR:!2025-03-27,3,256-->
+<!--SR:!2025-04-08,12,276-->
 
 70.TabError: inconsistent use of tabs and spaces in indentation
 ?
@@ -554,12 +554,14 @@ function()
 90.在Python中，首字母大写的名称指的是？
 ?
 类
+<!--SR:!2025-03-31,4,283-->
 
 91.class Dog():这个类定义中的括号是空的，说明？
 ?
 没有继承任何类，是从空白开始创建这个类
+<!--SR:!2025-03-30,3,264-->
 
-92.创建类时，第一个要写的方法是？必不可少的形参是？
+92.创建类时，第一个要写的方法是？必不可少的形参是？并且位置一定要位于？
 ?
 def __ init __ (self,name,age),self是必不可少的形参，还必须位于其他形参前面
 
@@ -567,71 +569,89 @@ def __ init __ (self,name,age),self是必不可少的形参，还必须位于其
 ?
 self.name = name
 self.age = age
+<!--SR:!2025-03-31,4,283-->
 
 94.除了initi这个方法之外，在写其他方法时，必不可少的形参是？
 ?
 self
+<!--SR:!2025-03-30,3,264-->
 
 95.我们通常可以认为首字母大写的名称（如
 Dog）指的是类，而小写的名称（如my_dog）指的是?
 ?
 根据类创建的实例
+<!--SR:!2025-03-30,3,265-->
 
 96.创建了实例my_dog之后该怎么访问属性？self.name = name
 self.age = age
 ?
 用句点表示法来获取属性，比如：my_dog.name
+<!--SR:!2025-03-30,3,265-->
 
 97.创建了实例my_dog之后该怎么调用方法？
 ?
 my_dog.roll_over()
+<!--SR:!2025-03-31,4,283-->
 
 98.如果在方法init中添加了一个新属性，并且设置了初始值，如self.odometer_reading = 0，那么？
 ?
 不需要提供形参
+<!--SR:!2025-03-30,3,265-->
 
-99.怎么修改属性的值?
+99.怎么修改属性的值?(两种办法)
 ?
 ①my_new_car.odometer_reading = 23
 ②通过方法修改：def update_odometer(self, mileage):
 """将里程表读数设置为指定的值"""
 self.odometer_reading = mileage
 my_new_car.update_odometer(23)
+<!--SR:!2025-03-28,1,245-->
 
 100.class ElectricCar(Car):创建子类时，在init方法中def __ init __ (self, make, model, year):首先要：
 ?
 初始化父类的属性：super().__ init __ (make, model, year)
+<!--SR:!2025-03-28,1,245-->
 
 101.如果我们在子类中添加了新的属性，根据子类创建的实例中会有吗？父类呢？
 ?
 子类会有，但是父类不会有
+<!--SR:!2025-03-30,3,265-->
 
 102.当调用子类创建实例时，如果用的是和父类中一样的方法，那么？
 ?
 Python只关注子类中定义的
+<!--SR:!2025-03-30,3,264-->
 
 103.如果创建了类Battery,要怎么在类ElectricCar中将属性设置为该类？即根据这个类来创建实例，并把这个实例当作属性
 ?
 self.battery = Battery()
+<!--SR:!2025-03-31,4,283-->
 
 104.将实例当作属性之后self.battery = Battery()要怎么调用方法Battery中的方法？
 ?
+my_tesla = ElectricCar('tesla', 'model s', 2016)
 my_tesla.battery.describe_battery()
+<!--SR:!2025-03-28,1,245-->
 
 105.怎么导入模块（其实就是一个文件）中的类？
 ?
 from car import Car
+<!--SR:!2025-03-30,3,264-->
 
 106.怎么从一个模块中导入多个类？
 ?
 from car import Car, ElectricCar
+<!--SR:!2025-03-30,3,265-->
 
 107.怎么导入整个模块？
 ?
-from car import Car, ElectricCar
+import module_name
+<!--SR:!2025-03-30,3,264-->
 
 108.from module_name import * 这是什么意思？
 ?
+要导入模块中的每个类
+<!--SR:!2025-03-28,1,243-->
 
 109.怎么创建一个有序的字典？
 ?
@@ -640,27 +660,33 @@ favorite_languages['jen'] = 'python'
 favorite_languages['sarah'] = 'c'
 favorite_languages['edward'] = 'ruby'
 favorite_languages['phil'] = 'python'
+<!--SR:!2025-03-30,3,265-->
 
 110.生成随机数的函数在什么模块里？
 ?
 random
+<!--SR:!2025-03-31,4,283-->
 
 111.random模块里有一个函数可以返回一个位于指定范围的整数，该函数是什么，该怎么使用该函数进行随机数生成？
 ?
 from random import randint
 x = randint(1, 6)
+<!--SR:!2025-03-28,1,244-->
 
 112.在类中，可以用几个空行分隔方法？
 ?
 一个
+<!--SR:!2025-03-30,3,265-->
 
 113.在模块中，可以用几个空行分隔类？
 ?
 两个
+<!--SR:!2025-03-30,3,263-->
 
 114.在导入模块时，顺序一般是？两种模块之间该怎么区分？
 ?
 先编写导入标准库模块的import语句，再添加一个空行，然后编写导入你自己编写的模块的import语句
+<!--SR:!2025-03-31,4,283-->
 
 115.UnicodeDecodeError: 'gbk' codec can't decode byte 0x9d in position 1856: illegal multibyte sequence这是什么错误？该怎么解决？
 ?
@@ -669,5 +695,156 @@ with open('somefile.txt', encoding='utf-8') as f_object:
     contents = f_object.read()
 print(contents)
 ```
+<!--SR:!2025-03-28,1,245-->
 
-116.
+116.打开文件pi_digits.txt，并且读取用什么方法？加上全部打印出来，而不是分行
+?
+with open('pi_digits.txt') as file_object:
+contents = file_object.read()
+print(contents)
+
+117.关键字with在什么时候关闭所选文件？
+?
+不再需要访问文件后
+
+118.read()到达文件末尾时会：
+?
+返回一个空字符串，即空行
+
+119.当你将类似pi_digits.txt这样的简单文件名传递给函数open()时，python将在哪里查找这个文件？
+?
+Python将在当前执行的文件（即.py程序文件）所在的目录中查找文件。
+
+120.要让Python打开不与程序文件位于同一个目录中的文件，需要？
+?
+需要提供文件路径，它让Python到系统的特定位置去查找
+
+121.Windows系统中，在文件路径中什么斜杠？
+?
+使用反斜杠（\）而不是斜杠（/）
+
+122.比如你写的程序文件在python_work中，而要读取的文件在python_work中的另一个文件夹text_files,那么此时相对路径是？
+?
+with open('text_files\filename.txt') as file_object:
+
+123.绝对文件路径是什么？长什么样子？
+?
+file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt
+
+124.对写入了多行文本的文件进行每一行读取且打印：
+?
+filename = 'pi_digits.txt'
+with open(filename) as file_object:
+	for line in file_object:
+	print(line)
+
+125.如果要在with代码块外访问文件的内容，可？该怎么写？用什么方法？
+?
+在with代码块内将文件的各行存储在一个列表中，并在with代码块外使用该列表.
+filename = 'pi_digits.txt'
+with open(filename) as file_object:
+	lines = file_object.readlines()
+for line in lines:
+print(line.rstrip())
+
+126.读取文本文件时，Python将其中的所有文本都解读？如果你读取的是数字，并要将其作为数值使用，就必须使用函数？
+?
+字符串；int()将其转换为整数，或者float将其转换成浮点数
+
+127.pi_string是存储了一百万位的圆周率字符串，只打印到小数点后50位怎么表示？
+?
+print(pi_string[:52])
+
+128.输入一串数字字符串，检查是否在pi_string 里用的判断语句是？
+?
+if birthday in pi_string:
+
+129.open函数提供了两个实参，分别是？
+?
+第一个实参也是要打开的文件的名称；第二个实参（'w'）告诉Python，我们要以写入模式打开这个文件。
+
+130.想要写入文件/读取模式/附加模式/读取+写入可以怎么调用open函数？采取什么方法进行写入？
+?
+filename = 'programming.txt'
+with open(filename, 'w') as file_object:
+file_object.write("I love programming.")
+读取模式（'r'）、写入模式（'w'）、附加模式（'a'）或让你能够读取和写入文件的模式（'r+'）
+
+131.如果你要写入的文件不存在，函数open()将？
+?
+自动创建它。
+
+132.然而，以写入（'w'）模式打开文件时千万要小心，因为如果指定的文件已经存在，Python将?
+?
+在返回文件对象前清空该文件。也就是覆盖了
+
+133写入多行时，函数write会像print一样自动添加换行符吗？
+?
+不会
+
+134.编写一个try-except代码块来处理理 ZeroDivisionError 异常？
+?
+try:
+	print(5/0)
+except ZeroDivisionError:
+	print("You can't divide by zero!")
+
+135.else代码块，用来存放？
+?
+依赖于try代码块成功执行的代码
+
+136.除了ZeroDivisionError 异常还有？
+?
+FileNotFoundError 异常
+
+137.方法split()是怎么起作用的？且该怎么调用它？
+?
+以空格为分隔符将字符串分拆成多个部分，并将这些部分都存储到一个列表中。结果是一个包含字符串中所有单词的列表，虽然有些单词可能包含标点。
+text="I like reading, but she doesn't"
+words=text.split()
+print(words)
+
+138.遇到异常时选择忽略：
+?
+except FileNotFoundError:
+	pass
+
+139.程序都把用户提供的信息存储在
+?
+列表和字典等数据结构中。
+
+140.用什么模块来存储数据？
+?
+一种简单的方式是使用模块json来存储数据。
+
+141.json全称？
+?
+JSON（JavaScript Object Notation）
+
+142.将列表存储为json格式的文件？需要注意几点？
+?
+导入json模块，还有文件后缀，以及函数的调用格式
+import json
+numbers = [2, 3, 5, 7, 11, 13]
+filename = 'numbers.json'
+with open(filename, 'w') as f_obj:
+	json.dump(numbers, f_obj)
+
+143.将文件中的列表读入到内存中？用什么函数？
+?
+import json
+filename = 'numbers.json'
+with open(filename) as f_obj:
+	numbers = json.load(f_obj)
+print(numbers)
+
+144.json是一种？
+?
+这是一种在程序之间共享数据的简单方式。除了python其他语言也在使用
+
+145.检查字符串是否为空的判断条件？
+?
+if username: 
+  print("Welcome back, " + username + "!")
+
+146.
