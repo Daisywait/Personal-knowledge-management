@@ -73,7 +73,7 @@ motorcycles.append('ducati')
 motorcycles.insert(0, 'ducati')
 print(motorcycles)
 ['ducati', 'honda', 'yamaha', 'suzuki']
-<!--SR:!2025-03-28,8,250-->
+<!--SR:!2025-04-01,4,230-->
 
 14.如果知道要删除的元素在motorcycles列表中的位置，并且这个元素之后不再使用，可使用__语句来删除列表中的元素
 ?
@@ -172,7 +172,7 @@ print(magician)
 ?
 for value in range(1,5):
 	print(value)
-<!--SR:!2025-03-28,5,234-->
+<!--SR:!2025-03-31,3,214-->
 
 29.将range打印出来的数字形成一个列表：
 ?
@@ -363,7 +363,7 @@ for username, user_info in users.items():
 print("\nUsername: " + username)
 full_name = user_info['first'] + " " + user_info['last']
 location = user_info['location']
-<!--SR:!2025-03-28,2,216-->
+<!--SR:!2025-04-01,4,216-->
 
 58.input的用法？比如让用户输入姓名？
 ?
@@ -428,7 +428,7 @@ responses[name] = response
 repeat = input("Would you like to let another person respond? (yes/ no) ")
 if repeat == 'no':
 polling_active = False#在前面定义
-<!--SR:!2025-03-28,2,236-->
+<!--SR:!2025-04-02,5,236-->
 
 69.当调查结束时，为了显示调查结果而写的提示信息：
 ?
@@ -438,12 +438,12 @@ print("\n--- Poll Results ---")
 70.TabError: inconsistent use of tabs and spaces in indentation
 ?
 是缩进的错误，混用了空格和制表符
-<!--SR:!2025-03-28,4,278-->
+<!--SR:!2025-04-09,12,278-->
 
 71.可使用什么关键字来告诉Python你要定义一个函数
 ?
 def
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-09,12,281-->
 
 72.在哪里描述函数是做什么的，用什么进行注释？
 ?
@@ -453,12 +453,12 @@ def
 73.实参是什么？
 ?
 调用函数时传递给函数的信息
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-09,12,282-->
 
 74.在传递实参时，字符要用什么包裹？
 ?
 引号
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-08,11,282-->
 
 75.使用位置实参来调用函数时，要注意：
 ?
@@ -468,28 +468,28 @@ def
 76.关键字实参是什么
 ?
 是传递给函数的名称-值 对，如describe_pet(animal_type='hamster', pet_name='harry')
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-07,10,282-->
 
 77.使用关键字实参时，顺序重要吗？
 ?
 不重要；这两个是等效的：describe_pet(animal_type='hamster', pet_name='harry')
 describe_pet(pet_name='harry', animal_type='hamster')
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-07,10,281-->
 
 78.如果没有显式地给形参提供实参，那么？
 ?
 将使用函数定义时所设定地形参默认值
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-06,9,262-->
 
 79.使用形参默认值时，在形参列表中必须先列出？后列出？
 ?
 先列出没有默认值的形参，后列出有默认值的实参
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-08,11,281-->
 
 80.函数除了能够直接用print显示输出，还能
 ?
 使用return返回值、字典、列表
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-09,12,282-->
 
 81.并不是所有人都有中间名，那么为了让传入的实参变成可选的，可以？这时候函数该怎么定义？所以有两个情况，为空和不为空，if判断的条件怎么写？
 ?
@@ -500,17 +500,17 @@ full_name = first_name + ' ' + middle_name + ' ' + last_name
 else:
 full_name = first_name + ' ' + last_name
 return full_name.title()
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-05,8,262-->
 
 82.函数怎么返回字典？
 ?
 直接return+字典名
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-05,8,261-->
 
 83.如果遇到while循环条件是True，要怎么设计退出？
 ?
 当满足一定条件后使用break,所以要提前告诉用户可以退出的办法，在循环内使用if进行条件判断，如果符合那么break
-<!--SR:!2025-03-28,2,242-->
+<!--SR:!2025-04-04,7,262-->
 
 84.函数怎么传递列表？
 ?
@@ -520,12 +520,12 @@ return full_name.title()
 85.将列表传递给函数后，函数对其修改，这些修改都是？
 ?
 永久性的
-<!--SR:!2025-03-28,3,262-->
+<!--SR:!2025-04-08,11,282-->
 
 86.不修改原本的列表，可以使用
 ?
 列表的副本，传递列表的副本func(list_name[:])
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-06,9,261-->
 
 87.怎么传递任意数量的实参？
 ?
@@ -535,7 +535,7 @@ def make_pizza(*  toppings):形参名* toppings中的星号让Python创建一个
 88.怎么传递任意数量的关键字实参？
 ?
 def build_profile(first, last, ** user_info):(注意星号和形参之间没有空格，只是obsidian的格式问题)形参** user_info中的两个星号让Python创建一个名为user_info的空字典，并将收到的所有名称—值对都封装到这个字典中。在这个函数中，可以像访问其他字典那样访问user_info中的名称—值对。
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-03-30,2,241-->
 
 89.这些导入函数或模块的方法，分别该怎么调用函数？
 import module_name
@@ -549,7 +549,7 @@ function()
 fn()
 mn.function()
 function()
-<!--SR:!2025-03-28,3,261-->
+<!--SR:!2025-04-09,12,281-->
 
 90.在Python中，首字母大写的名称指的是？
 ?
@@ -564,6 +564,7 @@ function()
 92.创建类时，第一个要写的方法是？必不可少的形参是？并且位置一定要位于？
 ?
 def __ init __ (self,name,age),self是必不可少的形参，还必须位于其他形参前面
+<!--SR:!2025-04-01,4,284-->
 
 93.怎么初始化属性：def __ init __ (self,name,age)
 ?
@@ -605,12 +606,12 @@ my_dog.roll_over()
 """将里程表读数设置为指定的值"""
 self.odometer_reading = mileage
 my_new_car.update_odometer(23)
-<!--SR:!2025-03-28,1,245-->
+<!--SR:!2025-03-30,2,245-->
 
 100.class ElectricCar(Car):创建子类时，在init方法中def __ init __ (self, make, model, year):首先要：
 ?
 初始化父类的属性：super().__ init __ (make, model, year)
-<!--SR:!2025-03-28,1,245-->
+<!--SR:!2025-03-29,1,225-->
 
 101.如果我们在子类中添加了新的属性，根据子类创建的实例中会有吗？父类呢？
 ?
@@ -631,7 +632,7 @@ self.battery = Battery()
 ?
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 my_tesla.battery.describe_battery()
-<!--SR:!2025-03-28,1,245-->
+<!--SR:!2025-03-31,3,265-->
 
 105.怎么导入模块（其实就是一个文件）中的类？
 ?
@@ -651,7 +652,7 @@ import module_name
 108.from module_name import * 这是什么意思？
 ?
 要导入模块中的每个类
-<!--SR:!2025-03-28,1,243-->
+<!--SR:!2025-03-31,3,263-->
 
 109.怎么创建一个有序的字典？
 ?
@@ -671,7 +672,7 @@ random
 ?
 from random import randint
 x = randint(1, 6)
-<!--SR:!2025-03-28,1,244-->
+<!--SR:!2025-03-29,1,224-->
 
 112.在类中，可以用几个空行分隔方法？
 ?
@@ -695,41 +696,49 @@ with open('somefile.txt', encoding='utf-8') as f_object:
     contents = f_object.read()
 print(contents)
 ```
-<!--SR:!2025-03-28,1,245-->
+<!--SR:!2025-03-29,1,225-->
 
 116.打开文件pi_digits.txt，并且读取用什么方法？加上全部打印出来，而不是分行
 ?
 with open('pi_digits.txt') as file_object:
 contents = file_object.read()
 print(contents)
+<!--SR:!2025-03-31,3,264-->
 
 117.关键字with在什么时候关闭所选文件？
 ?
 不再需要访问文件后
+<!--SR:!2025-04-01,4,284-->
 
 118.read()到达文件末尾时会：
 ?
 返回一个空字符串，即空行
+<!--SR:!2025-04-01,4,284-->
 
 119.当你将类似pi_digits.txt这样的简单文件名传递给函数open()时，python将在哪里查找这个文件？
 ?
 Python将在当前执行的文件（即.py程序文件）所在的目录中查找文件。
+<!--SR:!2025-04-01,4,284-->
 
 120.要让Python打开不与程序文件位于同一个目录中的文件，需要？
 ?
 需要提供文件路径，它让Python到系统的特定位置去查找
+<!--SR:!2025-04-01,4,284-->
 
 121.Windows系统中，在文件路径中什么斜杠？
 ?
 使用反斜杠（\）而不是斜杠（/）
+<!--SR:!2025-04-01,4,284-->
 
 122.比如你写的程序文件在python_work中，而要读取的文件在python_work中的另一个文件夹text_files,那么此时相对路径是？
 ?
 with open('text_files\filename.txt') as file_object:
+<!--SR:!2025-03-31,3,264-->
 
 123.绝对文件路径是什么？长什么样子？
 ?
 file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt
+<!--SR:!2025-04-01,4,284-->
 
 124.对写入了多行文本的文件进行每一行读取且打印：
 ?
@@ -737,6 +746,7 @@ filename = 'pi_digits.txt'
 with open(filename) as file_object:
 	for line in file_object:
 	print(line)
+<!--SR:!2025-03-29,1,244-->
 
 125.如果要在with代码块外访问文件的内容，可？该怎么写？用什么方法？
 ?
@@ -746,22 +756,27 @@ with open(filename) as file_object:
 	lines = file_object.readlines()
 for line in lines:
 print(line.rstrip())
+<!--SR:!2025-03-29,1,244-->
 
 126.读取文本文件时，Python将其中的所有文本都解读？如果你读取的是数字，并要将其作为数值使用，就必须使用函数？
 ?
 字符串；int()将其转换为整数，或者float将其转换成浮点数
+<!--SR:!2025-04-01,4,284-->
 
 127.pi_string是存储了一百万位的圆周率字符串，只打印到小数点后50位怎么表示？
 ?
 print(pi_string[:52])
+<!--SR:!2025-04-01,4,284-->
 
 128.输入一串数字字符串，检查是否在pi_string 里用的判断语句是？
 ?
 if birthday in pi_string:
+<!--SR:!2025-03-31,3,264-->
 
 129.open函数提供了两个实参，分别是？
 ?
 第一个实参也是要打开的文件的名称；第二个实参（'w'）告诉Python，我们要以写入模式打开这个文件。
+<!--SR:!2025-04-01,4,284-->
 
 130.想要写入文件/读取模式/附加模式/读取+写入可以怎么调用open函数？采取什么方法进行写入？
 ?
@@ -769,18 +784,22 @@ filename = 'programming.txt'
 with open(filename, 'w') as file_object:
 file_object.write("I love programming.")
 读取模式（'r'）、写入模式（'w'）、附加模式（'a'）或让你能够读取和写入文件的模式（'r+'）
+<!--SR:!2025-03-29,1,244-->
 
 131.如果你要写入的文件不存在，函数open()将？
 ?
 自动创建它。
+<!--SR:!2025-04-01,4,284-->
 
 132.然而，以写入（'w'）模式打开文件时千万要小心，因为如果指定的文件已经存在，Python将?
 ?
 在返回文件对象前清空该文件。也就是覆盖了
+<!--SR:!2025-04-01,4,284-->
 
 133写入多行时，函数write会像print一样自动添加换行符吗？
 ?
 不会
+<!--SR:!2025-04-01,4,284-->
 
 134.编写一个try-except代码块来处理理 ZeroDivisionError 异常？
 ?
@@ -788,14 +807,17 @@ try:
 	print(5/0)
 except ZeroDivisionError:
 	print("You can't divide by zero!")
+<!--SR:!2025-04-01,4,284-->
 
 135.else代码块，用来存放？
 ?
 依赖于try代码块成功执行的代码
+<!--SR:!2025-04-01,4,284-->
 
 136.除了ZeroDivisionError 异常还有？
 ?
 FileNotFoundError 异常
+<!--SR:!2025-04-01,4,284-->
 
 137.方法split()是怎么起作用的？且该怎么调用它？
 ?
@@ -803,23 +825,28 @@ FileNotFoundError 异常
 text="I like reading, but she doesn't"
 words=text.split()
 print(words)
+<!--SR:!2025-03-29,1,244-->
 
 138.遇到异常时选择忽略：
 ?
 except FileNotFoundError:
 	pass
+<!--SR:!2025-04-01,4,284-->
 
 139.程序都把用户提供的信息存储在
 ?
 列表和字典等数据结构中。
+<!--SR:!2025-04-01,4,284-->
 
 140.用什么模块来存储数据？
 ?
 一种简单的方式是使用模块json来存储数据。
+<!--SR:!2025-03-31,3,264-->
 
 141.json全称？
 ?
 JSON（JavaScript Object Notation）
+<!--SR:!2025-04-01,4,284-->
 
 142.将列表存储为json格式的文件？需要注意几点？
 ?
@@ -829,6 +856,7 @@ numbers = [2, 3, 5, 7, 11, 13]
 filename = 'numbers.json'
 with open(filename, 'w') as f_obj:
 	json.dump(numbers, f_obj)
+<!--SR:!2025-03-29,1,244-->
 
 143.将文件中的列表读入到内存中？用什么函数？
 ?
@@ -837,14 +865,17 @@ filename = 'numbers.json'
 with open(filename) as f_obj:
 	numbers = json.load(f_obj)
 print(numbers)
+<!--SR:!2025-03-29,1,244-->
 
 144.json是一种？
 ?
 这是一种在程序之间共享数据的简单方式。除了python其他语言也在使用
+<!--SR:!2025-03-29,1,244-->
 
 145.检查字符串是否为空的判断条件？
 ?
-if username: 
+if username:
   print("Welcome back, " + username + "!")
+<!--SR:!2025-04-01,4,284-->
 
 146.
