@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "闪卡/python.md",
+                "file": "闪卡/flashcards-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python"
+              "title": "flashcards-1"
             }
           },
           {
@@ -200,25 +200,26 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "1fd81c3300e22903",
+  "active": "cd2fba4c56b46d71",
   "lastOpenFiles": [
-    "闪卡/flashcards-1.md",
+    "Pasted image 20250329111031.png",
+    "Pasted image 20250329110912.png",
+    "Pasted image 20250329110858.png",
+    "Pasted image 20250329110358.png",
+    "Pasted image 20250329110241.png",
+    "Pasted image 20250329110115.png",
+    "Pasted image 20250329110059.png",
+    "Pasted image 20250329110028.png",
+    "Pasted image 20250329105745.png",
+    "Pasted image 20250329105642.png",
+    "Pasted image 20250329105607.png",
     "闪卡/python.md",
+    "闪卡/flashcards-1.md",
     "闪卡/文档快捷键和数据处理.md",
     "闪卡/命令行.md",
     "闪卡/“未解之谜”.md",
     "未命名",
     "Python",
-    "Pasted image 20250318162248.png",
-    "Pasted image 20250318162218.png",
-    "Pasted image 20250316122521.png",
-    "Pasted image 20250316114635.png",
-    "Pasted image 20250316110619.png",
-    "Pasted image 20250316110457.png",
-    "Pasted image 20250316110342.png",
-    "Pasted image 20250315112017.png",
-    "Pasted image 20250315111848.png",
-    "Pasted image 20250313080705.png",
     "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
     "闪卡",
     "JPEG.md",
@@ -244,7 +245,6 @@
     "AI/torch.utils.data.DataLoader.md",
     "AI/MNIST 数据集.md",
     "AI/灰度图.md",
-    "AI/train=True.md",
-    "AI/root.md"
+    "AI/train=True.md"
   ]
 }

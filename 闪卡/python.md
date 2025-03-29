@@ -38,7 +38,7 @@ favorite_language.lstrip()
 'python '
 favorite_language.strip()
 'python'
-<!--SR:!2025-03-29,7,250-->
+<!--SR:!2025-04-15,17,250-->
 
 8.使用什么表示乘方运算
 ?
@@ -90,7 +90,7 @@ print(motorcycles)
 popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
-<!--SR:!2025-03-29,7,250-->
+<!--SR:!2025-04-16,18,250-->
 
 16.想使用pop()删除列表中任何位置的元素：
 ?
@@ -107,7 +107,7 @@ motorcycles.remove('ducati')
 print(motorcycles)
 ['honda', 'yamaha', 'suzuki', 'ducati']
 ['honda', 'yamaha', 'suzuki']
-<!--SR:!2025-03-29,9,250-->
+<!--SR:!2025-04-20,22,250-->
 
 18.remove根据值删除了之后还可以后续使用这个值是因为：
 ?
@@ -116,7 +116,7 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print(motorcycles)
 print("\nA " + too_expensive.title() + " is too expensive for me.")
-<!--SR:!2025-03-29,7,250-->
+<!--SR:!2025-04-16,18,250-->
 
 19.SyntaxError: Non-UTF-8 code starting with '\xb4' in file D:\wait_what\Documents\python_work\python\Chapter03\list_2.py on line 2, but no encoding declared; see https://peps.python.org/pep-0263/ for details
 ?
@@ -150,7 +150,7 @@ print(sorted(cars,reverse=True))
 24.反转列表的排列顺序，有何特点？（不用sort)
 ?
 cars.reverse(),永久性，但是再调用一次即可恢复
-<!--SR:!2025-03-29,5,190-->
+<!--SR:!2025-04-09,11,190-->
 
 25.确定列表长度？
 ?
@@ -304,7 +304,7 @@ for value in user_0.values()
 ?
 for name in sorted(favorite_languages.keys()):
 print(name.title() + ", thank you for taking the poll.")
-<!--SR:!2025-03-29,3,216-->
+<!--SR:!2025-04-04,6,216-->
 
 52.如何对字典中的值精简输出，不重复：
 ?
@@ -328,7 +328,7 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
 print(alien)
-<!--SR:!2025-03-29,2,216-->
+<!--SR:!2025-04-02,4,216-->
 
 55.在字典pizza中存储toppings列表,并且打印出来：
 ?
@@ -391,7 +391,7 @@ age=int(age)
 62.在要求很多条件都满足才继续运行的程序中，可定义一个变量，用于判断整个程序是否处于活动状态。这个变量被称为?
 ?
 active,标志，当active=True时，循环继续进行，当为False时结束循环
-<!--SR:!2025-03-29,2,256-->
+<!--SR:!2025-04-05,7,276-->
 
 63.什么让Python忽略余下的代码，并返回到循环的开头
 ?
@@ -448,7 +448,7 @@ def
 72.在哪里描述函数是做什么的，用什么进行注释？
 ?
 在def紧接着的下面一行，用“”“ ”“”叫文档字符串
-<!--SR:!2025-03-29,4,282-->
+<!--SR:!2025-04-13,15,302-->
 
 73.实参是什么？
 ?
@@ -463,7 +463,7 @@ def
 75.使用位置实参来调用函数时，要注意：
 ?
 确认函数调用中实参的顺序和函数定义中形参的顺序一致
-<!--SR:!2025-03-29,3,262-->
+<!--SR:!2025-04-07,9,262-->
 
 76.关键字实参是什么
 ?
@@ -515,7 +515,7 @@ return full_name.title()
 84.函数怎么传递列表？
 ?
 直接函数名(列表名)
-<!--SR:!2025-03-29,3,262-->
+<!--SR:!2025-04-07,9,262-->
 
 85.将列表传递给函数后，函数对其修改，这些修改都是？
 ?
@@ -530,7 +530,7 @@ return full_name.title()
 87.怎么传递任意数量的实参？
 ?
 def make_pizza(*  toppings):形参名* toppings中的星号让Python创建一个名为toppings的空元组，并将收到的所有值都封装到这个元组中。(注意星号和形参之间没有空格，只是obsidian的格式问题)
-<!--SR:!2025-03-29,3,261-->
+<!--SR:!2025-04-07,9,261-->
 
 88.怎么传递任意数量的关键字实参？
 ?
@@ -611,7 +611,7 @@ my_new_car.update_odometer(23)
 100.class ElectricCar(Car):创建子类时，在init方法中def __ init __ (self, make, model, year):首先要：
 ?
 初始化父类的属性：super().__ init __ (make, model, year)
-<!--SR:!2025-03-29,1,225-->
+<!--SR:!2025-03-31,2,225-->
 
 101.如果我们在子类中添加了新的属性，根据子类创建的实例中会有吗？父类呢？
 ?
@@ -672,7 +672,7 @@ random
 ?
 from random import randint
 x = randint(1, 6)
-<!--SR:!2025-03-29,1,224-->
+<!--SR:!2025-04-01,3,244-->
 
 112.在类中，可以用几个空行分隔方法？
 ?
@@ -696,7 +696,7 @@ with open('somefile.txt', encoding='utf-8') as f_object:
     contents = f_object.read()
 print(contents)
 ```
-<!--SR:!2025-03-29,1,225-->
+<!--SR:!2025-03-30,1,205-->
 
 116.打开文件pi_digits.txt，并且读取用什么方法？加上全部打印出来，而不是分行
 ?
@@ -746,7 +746,7 @@ filename = 'pi_digits.txt'
 with open(filename) as file_object:
 	for line in file_object:
 	print(line)
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-30,1,224-->
 
 125.如果要在with代码块外访问文件的内容，可？该怎么写？用什么方法？
 ?
@@ -756,7 +756,7 @@ with open(filename) as file_object:
 	lines = file_object.readlines()
 for line in lines:
 print(line.rstrip())
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-31,2,244-->
 
 126.读取文本文件时，Python将其中的所有文本都解读？如果你读取的是数字，并要将其作为数值使用，就必须使用函数？
 ?
@@ -784,7 +784,7 @@ filename = 'programming.txt'
 with open(filename, 'w') as file_object:
 file_object.write("I love programming.")
 读取模式（'r'）、写入模式（'w'）、附加模式（'a'）或让你能够读取和写入文件的模式（'r+'）
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-31,2,244-->
 
 131.如果你要写入的文件不存在，函数open()将？
 ?
@@ -825,7 +825,7 @@ FileNotFoundError 异常
 text="I like reading, but she doesn't"
 words=text.split()
 print(words)
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-30,1,224-->
 
 138.遇到异常时选择忽略：
 ?
@@ -856,7 +856,7 @@ numbers = [2, 3, 5, 7, 11, 13]
 filename = 'numbers.json'
 with open(filename, 'w') as f_obj:
 	json.dump(numbers, f_obj)
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-30,1,224-->
 
 143.将文件中的列表读入到内存中？用什么函数？
 ?
@@ -865,12 +865,12 @@ filename = 'numbers.json'
 with open(filename) as f_obj:
 	numbers = json.load(f_obj)
 print(numbers)
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-30,1,224-->
 
 144.json是一种？
 ?
 这是一种在程序之间共享数据的简单方式。除了python其他语言也在使用
-<!--SR:!2025-03-29,1,244-->
+<!--SR:!2025-03-31,2,244-->
 
 145.检查字符串是否为空的判断条件？
 ?
