@@ -121,7 +121,7 @@ print("\nA " + too_expensive.title() + " is too expensive for me.")
 19.SyntaxError: Non-UTF-8 code starting with '\xb4' in file D:\wait_what\Documents\python_work\python\Chapter03\list_2.py on line 2, but no encoding declared; see https://peps.python.org/pep-0263/ for details
 ?
 要在第一行添加：# coding=utf-8
-<!--SR:!2025-04-02,10,250-->
+<!--SR:!2025-04-07,5,230-->
 
 20.对列表内的元素进行字母顺序排列，这种排序方式有什么特点？
 ?
@@ -161,7 +161,7 @@ len(cars)
 ?
 for magician in magicians:
 print(magician)
-<!--SR:!2025-04-02,10,273-->
+<!--SR:!2025-04-30,28,273-->
 
 27.写for循环时容易出错的两个点：
 ?
@@ -228,12 +228,12 @@ print(players[0:3])、print(players[1:4])
 的区别
 ?
 第二个的语法实际上是让Python将新变量friend_foods关联到包含在my_foods中的列表，因此这两个变量都指向同一个列表，输出是第一个符合要求，而第二个不符合
-<!--SR:!2025-04-02,10,274-->
+<!--SR:!2025-04-28,26,274-->
 
 38.如果需要存储的一组值在程序的整个生命周期内都不变，可使用？怎么使用
 ?
 可以使用元组；比如一个矩形的长和宽固定不变：dimensions=(40,200)；注意要使用圆括号
-<!--SR:!2025-04-02,10,274-->
+<!--SR:!2025-04-29,27,274-->
 
 39.元组可以进行重新赋值吗？对单个元素进行索引修改呢？
 ?
@@ -248,7 +248,7 @@ in
 41.确定特定的值未包含在列表中很重要；在这种情况下，可使用关键字
 ?
 not in。
-<!--SR:!2025-04-02,10,274-->
+<!--SR:!2025-04-29,27,274-->
 
 42.将列表里的字符都进行lower处理：
 ?
@@ -293,7 +293,7 @@ for key, value in user_0.items():
 49.如何遍历字典中所有的键？
 ?
 for key in user_0.keys()
-<!--SR:!2025-04-02,7,256-->
+<!--SR:!2025-04-21,19,256-->
 
 50.如何遍历字典中所有的值？
 ?
@@ -328,7 +328,7 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
 print(alien)
-<!--SR:!2025-04-02,4,216-->
+<!--SR:!2025-04-15,13,236-->
 
 55.在字典pizza中存储toppings列表,并且打印出来：
 ?
@@ -428,7 +428,7 @@ responses[name] = response
 repeat = input("Would you like to let another person respond? (yes/ no) ")
 if repeat == 'no':
 polling_active = False#在前面定义
-<!--SR:!2025-04-02,5,236-->
+<!--SR:!2025-04-15,13,236-->
 
 69.当调查结束时，为了显示调查结果而写的提示信息：
 ?
@@ -746,7 +746,7 @@ filename = 'pi_digits.txt'
 with open(filename) as file_object:
 	for line in file_object:
 	print(line)
-<!--SR:!2025-04-02,1,204-->
+<!--SR:!2025-04-04,2,204-->
 
 125.如果要在with代码块外访问文件的内容，可？该怎么写？用什么方法？
 ?
@@ -825,7 +825,7 @@ FileNotFoundError 异常
 text="I like reading, but she doesn't"
 words=text.split()
 print(words)
-<!--SR:!2025-04-02,1,204-->
+<!--SR:!2025-04-04,2,204-->
 
 138.遇到异常时选择忽略：
 ?
@@ -856,7 +856,7 @@ numbers = [2, 3, 5, 7, 11, 13]
 filename = 'numbers.json'
 with open(filename, 'w') as f_obj:
 	json.dump(numbers, f_obj)
-<!--SR:!2025-04-02,1,204-->
+<!--SR:!2025-04-03,1,184-->
 
 143.将文件中的列表读入到内存中？用什么函数？
 ?
@@ -865,7 +865,7 @@ filename = 'numbers.json'
 with open(filename) as f_obj:
 	numbers = json.load(f_obj)
 print(numbers)
-<!--SR:!2025-04-02,1,204-->
+<!--SR:!2025-04-04,2,204-->
 
 144.json是一种？
 ?
@@ -881,14 +881,17 @@ if username:
 146.如果字符串长这样full_name = first + ' ' + last，first和last时传进去的实参，那么可以使用title函数吗？
 ?
 可以，直接full_name.title()
+<!--SR:!2025-04-05,3,265-->
 
 147.Python标准库中的什么模块提供了代码测试工具？
 ?
 模块unittest
+<!--SR:!2025-04-03,1,245-->
 
 148.对编写的函数进行测试用例编写时，需要导入什么？
 ?
 一个是测试代码工具，即模块模块unittest，一个是将要被测试的函数
+<!--SR:!2025-04-05,3,265-->
 
 149.除了导入模块外，编写测试用例的步骤是什么？
 ?
@@ -902,24 +905,29 @@ class NamesTestCase(unittest.TestCase):
 		formatted_name = get_formatted_name('janis', 'joplin')
 		self.assertEqual(formatted_name, 'Janis Joplin')
 unittest.main()
+<!--SR:!2025-04-03,1,245-->
 
 
 150.什么断言方法用来核实得到的结果是否与期望的结果一致？具体怎么使用
 ?
 self.assertEqual(formatted_name, 'Janis Joplin')
+<!--SR:!2025-04-03,1,245-->
 
 152.在运行完测试用例之后，首行的句点代表的意思是？
 ?
 表示测试通过，有几个句点就代表有几个测试通过了
+<!--SR:!2025-04-05,3,265-->
 
 
 153.![[Pasted image 20250401162557.png]]一一说出实现这些的断言方法是？
 ?
 ![[Pasted image 20250401162638.png]]
+<!--SR:!2025-04-03,1,245-->
 
 154.类的测试与函数的测试相似——所做的大部分工作都是测试？所以要？
 ?
 类中方法的行为；要测试类的行为，需要创建其实例。
+<!--SR:!2025-04-03,1,245-->
 
 155.如果在不同的测试方法中都用到同样/相似的对象，那么？
 ?
@@ -931,9 +939,78 @@ def setUp(self):
 question = "What language did you first learn to speak?"
 self.my_survey = AnonymousSurvey(question)
 self.responses = ['English', 'Spanish', 'Mandarin']
+<!--SR:!2025-04-05,3,265-->
 
 156.测试通过时？；测试引发错误时?；测试导致断言失败时?
 ?
 打印一个句点;打印一个E;打印一个F
+<!--SR:!2025-04-03,1,245-->
 
-157.
+157.在写外星人入侵项目源文件时即运行游戏的那个文件需要导入什么模块？
+?
+import sys来响应退出事件
+import pygame来初始化游戏和设置游戏
+<!--SR:!2025-04-03,1,245-->
+
+158.在游戏程序开头需要在创建运行游戏后的第一步是？起到了什么作用
+?
+初始化pygame,即pygame.init()，![[Pasted image 20250401191327.png]]
+<!--SR:!2025-04-03,1,245-->
+
+159.用pygame的什么可以创建屏幕窗口？
+?
+screen=pygame.display.set_mode((1200,600))#设置窗口为1200，600
+<!--SR:!2025-04-03,1,245-->
+
+160.设置背景颜色，并呈现
+?
+bg_color=[255,0,0]
+在循环中screen.fill(bg_color)
+<!--SR:!2025-04-03,1,245-->
+
+161设置窗口标题
+?
+pygame.display.set_caption("Alien Invasion")
+<!--SR:!2025-04-03,1,245-->
+
+162.在游戏主循环里，处理事件“退出”怎么写？
+?
+while True:
+		for event in pygame.event.get():
+			if event.type== pygame.QUIT:#如果点击事件为退出那么就调用sys的退出函数
+				sys.exit()
+<!--SR:!2025-04-03,1,245-->
+
+163.更新屏幕显示？
+?
+pygame.display.flip()也是在主循环里实现的
+<!--SR:!2025-04-03,1,245-->
+
+164.选择用于表示飞船的图像后，需要将其显示到屏幕上。我们将创建一个名为ship的模块，其
+中包含Ship类，它负责管理飞船的大部分行为，而这个类里要写几个方法？方法具体是实现了什么？
+?
+先导入pygame模块，然后编写类Ship；第一个是初始化init，里面包含导入图像，然后获取图像的外接矩形，还有飞船的放置位置；第二个方法是在屏幕上绘制飞船
+
+165.加载飞船图像并获取其外接矩形：
+?
+self.image = pygame.image.load('images/ship.bmp')
+self.rect = self.image.get_rect()
+self.screen_rect = screen.get_rect()
+
+166.将每艘新飞船放在屏幕底部中央？
+?
+self.rect.centerx = self.screen_rect.centerx
+self.rect.bottom = self.screen_rect.bottom
+
+167.在指定位置绘制飞船
+?
+screen = pygame.display.set_mode((1200, 800))
+在方法init中初始化：self.screen = screen
+def blitme(self):
+self.screen.blit(self.image, self.rect)
+
+168.怎么确保让飞船在背景之后出现？
+?
+screen.fill(ai_settings.bg_color)
+ship.blitme()
+填充背景色之后再进行飞船的绘制
