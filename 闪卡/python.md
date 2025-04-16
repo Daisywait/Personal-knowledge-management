@@ -29,7 +29,7 @@ print(name.title())；print(name.upper())、print(name.lower())
 \t \n
 <!--SR:!2025-05-14,40,290-->
 
-7.删除字符串末尾多余的后面？开头？同时？
+7.删除字符串末尾多余的空格后面？开头？同时？
 ?
 favorite_language = ' python '
 favorite_language.rstrip()
@@ -38,7 +38,7 @@ favorite_language.lstrip()
 'python '
 favorite_language.strip()
 'python'
-<!--SR:!2025-04-15,17,250-->
+<!--SR:!2025-05-29,43,250-->
 
 8.使用什么表示乘方运算
 ?
@@ -83,14 +83,14 @@ del motorcycles[0]
 print(motorcycles)
 ['honda', 'yamaha', 'suzuki']
 ['yamaha', 'suzuki']
-<!--SR:!2025-04-14,18,270-->
+<!--SR:!2025-06-04,49,270-->
 
 15.删除列表末尾的值，但是后期还需要使用它:motorcycles = ['honda', 'yamaha', 'suzuki']
 ?
 popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
-<!--SR:!2025-04-16,18,250-->
+<!--SR:!2025-05-31,45,250-->
 
 16.想使用pop()删除列表中任何位置的元素：
 ?
@@ -116,12 +116,12 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print(motorcycles)
 print("\nA " + too_expensive.title() + " is too expensive for me.")
-<!--SR:!2025-04-16,18,250-->
+<!--SR:!2025-06-18,63,270-->
 
 19.SyntaxError: Non-UTF-8 code starting with '\xb4' in file D:\wait_what\Documents\python_work\python\Chapter03\list_2.py on line 2, but no encoding declared; see https://peps.python.org/pep-0263/ for details
 ?
 要在第一行添加：# coding=utf-8
-<!--SR:!2025-04-16,6,210-->
+<!--SR:!2025-04-28,12,210-->
 
 20.对列表内的元素进行字母顺序排列，这种排序方式有什么特点？
 ?
@@ -180,11 +180,11 @@ numbers=list(range(1,6))
 print(numbers)
 <!--SR:!2025-05-07,33,274-->
 
-30.用函数range打印10以内的偶数，并转换成列表：
+30将0以内的偶数并转换成列表：
 ?
 even_numbers = list(range(2,11,2))
 print(even_numbers)
-<!--SR:!2025-04-14,13,234-->
+<!--SR:!2025-05-16,30,234-->
 
 31.将前10个整数的平方一个一个加入到一个列表中：
 ?
@@ -207,7 +207,7 @@ sum(digits)
 ?
 squares = [value**2 for value in range(1,11)]
 print(squares)
-<!--SR:!2025-04-15,10,234-->
+<!--SR:!2025-05-09,23,234-->
 
 34.players = ['charles', 'martina', 'michael', 'florence', 'eli']只打印列表前三个元素、2~4个元素：
 ?
@@ -217,7 +217,7 @@ print(players[0:3])、print(players[1:4])
 35.print(players[:4])表示？print(players[2:])呢
 ?
 从列表开头开始，打印至第四个元素(即索引3）；从索引2开始打印至列表的最后一个元素
-<!--SR:!2025-04-14,13,234-->
+<!--SR:!2025-05-16,30,234-->
 
 36.输出名单上的最后三名队员？
 ?
@@ -262,13 +262,13 @@ alien_0 = {'color': 'green','points':5}
 print(alien_0['color'])
 print(alien_0['points'])
 print(alien_0)
-<!--SR:!2025-04-14,13,236-->
+<!--SR:!2025-05-16,30,236-->
 
 44.在字典alien_0中添加两项信息：外星人的x坐标和y坐标
 ?
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
-<!--SR:!2025-04-14,3,236-->
+<!--SR:!2025-04-26,10,256-->
 
 45.创建一个空字典
 ?
@@ -328,7 +328,7 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
 print(alien)
-<!--SR:!2025-04-15,13,236-->
+<!--SR:!2025-05-18,32,236-->
 
 55.在字典pizza中存储toppings列表,并且打印出来：
 ?
@@ -338,7 +338,7 @@ pizza = {
   }
 for topping in pizza[[['toppings' ]]]:
 print("\t" + topping)
-<!--SR:!2025-04-16,5,196-->
+<!--SR:!2025-04-19,3,176-->
 
 56.字典中的items()只是返回：
 ?
@@ -363,7 +363,7 @@ for username, user_info in users.items():
 print("\nUsername: " + username)
 full_name = user_info['first'] + " " + user_info['last']
 location = user_info['location']
-<!--SR:!2025-04-16,5,196-->
+<!--SR:!2025-04-27,11,196-->
 
 58.input的用法？比如让用户输入姓名？
 ?
@@ -428,7 +428,7 @@ responses[name] = response
 repeat = input("Would you like to let another person respond? (yes/ no) ")
 if repeat == 'no':
 polling_active = False#在前面定义
-<!--SR:!2025-04-15,13,236-->
+<!--SR:!2025-04-23,7,216-->
 
 69.当调查结束时，为了显示调查结果而写的提示信息：
 ?
@@ -448,7 +448,7 @@ def
 72.在哪里描述函数是做什么的，用什么进行注释？
 ?
 在def紧接着的下面一行，用“”“ ”“”叫文档字符串
-<!--SR:!2025-04-13,15,302-->
+<!--SR:!2025-06-17,62,322-->
 
 73.实参是什么？
 ?
@@ -479,7 +479,7 @@ describe_pet(pet_name='harry', animal_type='hamster')
 78.如果没有显式地给形参提供实参，而且函数有形参默认值时，那么？
 ?
 将使用函数定义时所设定的形参默认值
-<!--SR:!2025-04-14,3,222-->
+<!--SR:!2025-04-25,9,242-->
 
 79.使用形参默认值时，在形参列表中必须先列出？后列出？
 ?
@@ -549,12 +549,12 @@ function()
 fn()
 mn.function()
 function()
-<!--SR:!2025-04-16,6,261-->
+<!--SR:!2025-05-07,21,281-->
 
 90.在Python中，首字母大写的名称指的是？
 ?
 类
-<!--SR:!2025-04-12,11,283-->
+<!--SR:!2025-05-18,32,283-->
 
 91.class Dog():这个类定义中的括号是空的，说明？
 ?
@@ -570,7 +570,7 @@ def __ init __ (self,name,age),self是必不可少的形参，还必须位于其
 ?
 self.name = name
 self.age = age
-<!--SR:!2025-04-13,12,283-->
+<!--SR:!2025-05-19,33,283-->
 
 94.除了init这个方法之外，在写其他方法时，必不可少的形参是？
 ?
@@ -592,7 +592,7 @@ self.age = age
 97.创建了实例my_dog之后该怎么调用方法？
 ?
 my_dog.roll_over()
-<!--SR:!2025-04-13,12,283-->
+<!--SR:!2025-06-01,46,303-->
 
 98.如果在方法init中添加了一个新属性，并且设置了初始值，如self.odometer_reading = 0，那么？
 ?
@@ -611,7 +611,7 @@ my_new_car.update_odometer(23)
 100.class ElectricCar(Car):创建子类时，在init方法中def __ init __ (self, make, model, year):首先要：
 ?
 初始化父类的属性：super().__ init __ (make, model, year)
-<!--SR:!2025-04-16,6,205-->
+<!--SR:!2025-04-28,12,205-->
 
 101.如果我们在子类中添加了新的属性，根据子类创建的实例中会有吗？父类呢？
 ?
@@ -621,7 +621,7 @@ my_new_car.update_odometer(23)
 102.当调用子类创建实例时，如果用的是和父类中一样的方法，那么？
 ?
 Python只关注子类中定义的
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-04-22,6,264-->
 
 103.如果创建了类Battery,要怎么在类ElectricCar中将属性设置为该类？即根据这个类来创建实例，并把这个实例当作属性
 ?
@@ -666,7 +666,7 @@ favorite_languages['phil'] = 'python'
 110.生成随机数的函数在什么模块里？
 ?
 random
-<!--SR:!2025-04-13,12,283-->
+<!--SR:!2025-06-03,48,303-->
 
 111.random模块里有一个函数可以返回一个位于指定范围的整数，该函数是什么，该怎么使用该函数进行随机数生成？
 ?
@@ -682,12 +682,12 @@ x = randint(1, 6)
 113.在模块中，可以用几个空行分隔类？
 ?
 两个
-<!--SR:!2025-04-12,4,243-->
+<!--SR:!2025-04-29,13,263-->
 
 114.在导入模块时，顺序一般是？两种模块之间该怎么区分？
 ?
 先编写导入标准库模块的import语句，再添加一个空行，然后编写导入你自己编写的模块的import语句
-<!--SR:!2025-04-13,12,283-->
+<!--SR:!2025-05-21,35,283-->
 
 115.UnicodeDecodeError: 'gbk' codec can't decode byte 0x9d in position 1856: illegal multibyte sequence这是什么错误？该怎么解决？
 ?
@@ -696,39 +696,39 @@ with open('somefile.txt', encoding='utf-8') as f_object:
     contents = f_object.read()
 print(contents)
 ```
-<!--SR:!2025-04-13,2,165-->
+<!--SR:!2025-04-21,5,185-->
 
 116.打开文件pi_digits.txt，并且读取用什么方法？加上全部打印出来，而不是分行
 ?
 with open('pi_digits.txt') as file_object:
 contents = file_object.read()
 print(contents)
-<!--SR:!2025-04-15,5,244-->
+<!--SR:!2025-05-03,17,264-->
 
 117.关键字with在什么时候关闭所选文件？
 ?
 不再需要访问文件后
 <!--SR:!2025-05-09,28,284-->
 
-118.read()到达文件末尾时会：
+118.read()到达文件末尾时会返回一个空字符串，即空行，表示
 ?
-返回一个空字符串，即空行
-<!--SR:!2025-04-12,11,284-->
+表示已经读取完毕
+<!--SR:!2025-04-22,6,264-->
 
 119.当你将类似pi_digits.txt这样的简单文件名传递给函数open()时，python将在哪里查找这个文件？
 ?
 Python将在当前执行的文件（即.py程序文件）所在的目录中查找文件。
-<!--SR:!2025-04-13,12,284-->
+<!--SR:!2025-05-20,34,284-->
 
 120.要让Python打开不与程序文件位于同一个目录中的文件，需要？
 ?
 需要提供文件路径，它让Python到系统的特定位置去查找
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-05-17,31,284-->
 
 121.Windows系统中，在文件路径中什么斜杠？
 ?
 使用反斜杠（\）而不是斜杠（/）
-<!--SR:!2025-04-13,12,284-->
+<!--SR:!2025-05-31,45,304-->
 
 122.比如你写的程序文件在python_work中，而要读取的文件在python_work中的另一个文件夹text_files,那么此时相对路径是？
 ?
@@ -738,7 +738,7 @@ with open('text_files\filename.txt') as file_object:
 123.绝对文件路径是什么？长什么样子？
 ?
 file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt
-<!--SR:!2025-04-13,12,284-->
+<!--SR:!2025-05-20,34,284-->
 
 124.对写入了多行文本的文件进行每一行读取且打印：
 ?
@@ -746,7 +746,7 @@ filename = 'pi_digits.txt'
 with open(filename) as file_object:
 	for line in file_object:
 	print(line)
-<!--SR:!2025-04-16,8,204-->
+<!--SR:!2025-04-20,4,184-->
 
 125.如果要在with代码块外访问文件的内容，可？该怎么写？用什么方法？
 ?
@@ -771,12 +771,12 @@ print(pi_string[:52])
 128.输入一串数字字符串，检查是否在pi_string 里用的判断语句是？
 ?
 if birthday in pi_string:
-<!--SR:!2025-04-15,5,244-->
+<!--SR:!2025-04-27,11,244-->
 
 129.open函数提供了两个实参，分别是？
 ?
 第一个实参也是要打开的文件的名称；第二个实参（'w'）告诉Python，我们要以写入模式打开这个文件。
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-05-17,31,284-->
 
 130.想要写入文件/读取模式/附加模式/读取+写入可以怎么调用open函数？采取什么方法进行写入？
 ?
@@ -794,7 +794,7 @@ file_object.write("I love programming.")
 132.然而，以写入（'w'）模式打开文件时千万要小心，因为如果指定的文件已经存在，Python将?
 ?
 在返回文件对象前清空该文件。也就是覆盖了
-<!--SR:!2025-04-13,12,284-->
+<!--SR:!2025-06-02,47,304-->
 
 133写入多行时，函数write会像print一样自动添加换行符吗？
 ?
@@ -807,12 +807,12 @@ try:
 	print(5/0)
 except ZeroDivisionError:
 	print("You can't divide by zero!")
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-05-17,31,284-->
 
-135.else代码块，用来存放？
+135.文件异常中：else代码块，用来存放？
 ?
 依赖于try代码块成功执行的代码
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-04-22,6,264-->
 
 136.除了ZeroDivisionError 异常还有？
 ?
@@ -825,13 +825,13 @@ FileNotFoundError 异常
 text="I like reading, but she doesn't"
 words=text.split()
 print(words)
-<!--SR:!2025-04-16,8,204-->
+<!--SR:!2025-05-02,16,204-->
 
-138.遇到异常时选择忽略：
+138.遇到异常时选择忽略的文件异常关键字是什么？
 ?
 except FileNotFoundError:
 	pass
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-04-22,6,264-->
 
 139.程序都把用户提供的信息存储在
 ?
@@ -846,7 +846,7 @@ except FileNotFoundError:
 141.json全称？
 ?
 JSON（JavaScript Object Notation）
-<!--SR:!2025-04-13,12,284-->
+<!--SR:!2025-04-22,6,264-->
 
 142.将列表存储为json格式的文件？需要注意几点？
 ?
@@ -856,7 +856,7 @@ numbers = [2, 3, 5, 7, 11, 13]
 filename = 'numbers.json'
 with open(filename, 'w') as f_obj:
 	json.dump(numbers, f_obj)
-<!--SR:!2025-04-12,2,164-->
+<!--SR:!2025-04-17,1,144-->
 
 143.将文件中的列表读入到内存中？用什么函数？
 ?
@@ -865,7 +865,7 @@ filename = 'numbers.json'
 with open(filename) as f_obj:
 	numbers = json.load(f_obj)
 print(numbers)
-<!--SR:!2025-04-16,5,164-->
+<!--SR:!2025-04-25,9,164-->
 
 144.json是一种？
 ?
@@ -876,12 +876,12 @@ print(numbers)
 ?
 if username:
   print("Welcome back, " + username + "!")
-<!--SR:!2025-04-12,11,284-->
+<!--SR:!2025-05-30,44,304-->
 
 146.如果字符串长这样full_name = first + ' ' + last，first和last时传进去的实参，那么可以使用title函数吗？
 ?
 可以，直接full_name.title()
-<!--SR:!2025-04-14,9,265-->
+<!--SR:!2025-05-19,33,285-->
 
 147.Python标准库中的什么模块提供了代码测试工具？
 ?
@@ -891,7 +891,7 @@ if username:
 148.对编写的函数进行测试用例编写时，需要导入什么？
 ?
 一个是测试代码工具，即模块模块unittest，一个是将要被测试的函数
-<!--SR:!2025-04-14,9,265-->
+<!--SR:!2025-05-11,25,265-->
 
 149.除了导入模块外，编写测试用例的步骤是什么？
 ?
@@ -905,18 +905,18 @@ class NamesTestCase(unittest.TestCase):
 		formatted_name = get_formatted_name('janis', 'joplin')
 		self.assertEqual(formatted_name, 'Janis Joplin')
 unittest.main()
-<!--SR:!2025-04-12,2,185-->
+<!--SR:!2025-04-17,1,165-->
 
 
 150.什么断言方法用来核实得到的结果是否与期望的结果一致？具体怎么使用
 ?
 self.assertEqual(formatted_name, 'Janis Joplin')
-<!--SR:!2025-04-12,5,225-->
+<!--SR:!2025-04-26,10,225-->
 
 152.在运行完测试用例之后，首行的句点代表的意思是？
 ?
 表示测试通过，有几个句点就代表有几个测试通过了
-<!--SR:!2025-04-14,9,265-->
+<!--SR:!2025-05-19,33,285-->
 
 
 153.![[Pasted image 20250401162557.png]]一一说出实现这些的断言方法是？
@@ -927,7 +927,7 @@ self.assertEqual(formatted_name, 'Janis Joplin')
 154.类的测试与函数的测试相似——所做的大部分工作都是测试？所以要？
 ?
 类中方法的行为；要测试类的行为，需要创建其实例。
-<!--SR:!2025-04-15,5,225-->
+<!--SR:!2025-04-26,10,225-->
 
 155.如果在不同的测试方法中都用到同样/相似的对象，那么？
 ?
@@ -939,7 +939,7 @@ def setUp(self):
 question = "What language did you first learn to speak?"
 self.my_survey = AnonymousSurvey(question)
 self.responses = ['English', 'Spanish', 'Mandarin']
-<!--SR:!2025-04-12,5,245-->
+<!--SR:!2025-04-27,11,245-->
 
 156.测试通过时？；测试引发错误时?；测试导致断言失败时?
 ?
@@ -950,7 +950,7 @@ self.responses = ['English', 'Spanish', 'Mandarin']
 ?
 import sys来响应退出事件
 import pygame来初始化游戏和设置游戏
-<!--SR:!2025-04-12,5,225-->
+<!--SR:!2025-04-19,3,205-->
 
 158.在游戏程序开头需要在创建运行游戏函数后的第一步是？起到了什么作用
 ?
@@ -966,7 +966,7 @@ screen=pygame.display.set_mode((1200,600))#设置窗口为1200，600
 ?
 bg_color=[255,0,0]
 在循环中screen.fill(bg_color)
-<!--SR:!2025-04-12,5,225-->
+<!--SR:!2025-04-26,10,225-->
 
 161设置窗口标题
 ?
@@ -979,7 +979,7 @@ while True:
 		for event in pygame.event.get():
 			if event.type== pygame.QUIT:#如果点击事件为退出那么就调用sys的退出函数
 				sys.exit()
-<!--SR:!2025-04-12,5,225-->
+<!--SR:!2025-05-02,16,245-->
 
 163.更新屏幕显示？
 ?
@@ -990,20 +990,20 @@ pygame.display.flip()也是在主循环里实现的
 中包含Ship类，它负责管理飞船的大部分行为，而这个类里要写几个方法？方法具体是实现了什么？
 ?
 先导入pygame模块，然后编写类Ship；第一个是初始化init，里面包含导入图像，然后获取图像的外接矩形，还有飞船的放置位置；第二个方法是在屏幕上绘制飞船
-<!--SR:!2025-04-16,9,264-->
+<!--SR:!2025-04-21,5,244-->
 
 165.加载飞船图像并获取其外接矩形：
 ?
 self.image = pygame.image.load('images/ship.bmp')
 self.rect = self.image.get_rect()
 self.screen_rect = screen.get_rect()
-<!--SR:!2025-04-14,4,224-->
+<!--SR:!2025-04-26,10,224-->
 
 166.将每艘新飞船放在屏幕底部中央？
 ?
 self.rect.centerx = self.screen_rect.centerx
 self.rect.bottom = self.screen_rect.bottom
-<!--SR:!2025-04-12,5,244-->
+<!--SR:!2025-04-27,11,244-->
 
 167.在指定位置绘制飞船的方法（只是绘制，不是怎么绘制）
 ?
@@ -1011,61 +1011,61 @@ screen = pygame.display.set_mode((1200, 800))
 在方法init中初始化：self.screen = screen
 def blitme(self):
 self.screen.blit(self.image, self.rect)
-<!--SR:!2025-04-13,2,164-->
+<!--SR:!2025-04-17,1,144-->
 
 168.怎么确保让飞船在背景之后出现？
 ?
 screen.fill(ai_settings.bg_color)
 ship.blitme()
 填充背景色之后再进行飞船的绘制
-<!--SR:!2025-04-13,2,184-->
+<!--SR:!2025-04-20,4,184-->
 
 169.pip是？
 ?
  是一个负责为你下载并安装Python包的程序
-<!--SR:!2025-04-13,3,260-->
+<!--SR:!2025-04-25,9,260-->
  
 170.pygame.display.flip()的作用是？
 ?
 将不断更新屏幕，以显示元素的新位置，并在原来的位置隐藏元素，从而营造平滑移动的效果。
-<!--SR:!2025-04-13,3,260-->
+<!--SR:!2025-04-25,9,260-->
 
 171.若不指定背景色，Pygame默认创建？
 ?
 一个黑色屏幕
-<!--SR:!2025-04-13,3,259-->
+<!--SR:!2025-04-24,8,259-->
 
 172.对于图片，Pygame默认加载？
 ?
 位图(.bmp)。
-<!--SR:!2025-04-13,3,260-->
+<!--SR:!2025-04-27,11,280-->
 
 173.要将游戏元素居中，可设置相应rect对象的属性: 要让游戏元素与屏幕边缘对齐，可使用属性:
  ?
  center、centerx或centery;top、bottom、left或right；
  self.rect.centerx = self.screen_rect.centerx
 self.rect.bottom = self.screen_rect.bottom
-<!--SR:!2025-04-12,1,220-->
+<!--SR:!2025-04-18,2,220-->
 
 174.在Pygame中，原点(0, 0)位于屏幕左上角，向右下方移动时，两个坐标值都怎么变化？在1200×800的屏幕上，原点位于？而右下角的坐标为？
 ?
 都增大；(1200, 800)。
-<!--SR:!2025-04-13,3,259-->
+<!--SR:!2025-04-26,10,279-->
 
 175.一开始将代码编写得尽可能？并在项目越来越复杂时进行?
 ?
 简单;重构。
-<!--SR:!2025-04-13,3,259-->
+<!--SR:!2025-04-25,9,259-->
 
 176.事件都是通过什么方法获取的？在函数check_events()中，我们需要指定要检查哪些类型的事件。每次按键都被注册为一个什么事件？
  ?
  方法pygame.event.get();KEYDOWN事件
-<!--SR:!2025-04-13,2,240-->
+<!--SR:!2025-04-23,7,260-->
 
 177.rect的centerx等属性只能存储？那要怎么让speed_factor为小数时也发挥作用？
 ?
 整数值；设置一个新的属性self.center，self.center = float(self.rect.centerx)，然后在更新飞船位置的时候直接更新self.center,self.center += self.ai_settings.ship_speed_factor，后面再更新rect值self.rect.centerx = self.center；self.rect.centerx将只存储self.center的整数部分，但对显示飞船而言，这问题不大。
-<!--SR:!2025-04-13,3,260-->
+<!--SR:!2025-04-28,12,280-->
 
 178.为了防止飞船出屏幕，判断条件该怎么写？
 ?
@@ -1077,12 +1077,12 @@ if self.moving_right and self.rect.right<self.screen_rect.right:
 self.centerx+=self.ai_settings.ship_speed_factor
 if self.moving_left and self.rect.left>0:
 self.centerx-=self.ai_settings.ship_speed_factor
-<!--SR:!2025-04-13,2,240-->
+<!--SR:!2025-04-17,1,220-->
 
 179.将子弹颜色设置成深灰色：
 ?
 self.bullet_color = 60, 60, 60
-<!--SR:!2025-04-13,2,240-->
+<!--SR:!2025-04-21,5,240-->
 
 180.创建存储Bullet类的文件bullet.py时，需要导入什么模块？分别有何作用？
 ?
@@ -1091,20 +1091,20 @@ from pygame.sprite import Sprite
 第一个pygame模块是为了创建子弹外形self.rect = pygame.Rect(0, 0, ai_settings.bullet_width,
 ai_settings.bullet_height)表示在(0,0)处进行创建ai_settings.bullet_width,ai_settings.bullet_height的子弹矩形；
 第二个是Sprite类为了后面根据此类进行实例创建后，对子弹元素可以统一进行编组和管理
-<!--SR:!2025-04-13,3,259-->
+<!--SR:!2025-04-24,8,259-->
 
 181.为了让子弹看起来是飞船发射的，子弹的位置怎么设置？
 ?
 self.rect.centerx = ship.rect.centerx
 self.rect.top = ship.rect.top
-<!--SR:!2025-04-13,2,240-->
+<!--SR:!2025-04-21,5,240-->
 
 182.在bullet.py中创建方法，在屏幕上绘制子弹？
 ?
 def draw_bullet(self):
 """在屏幕上绘制子弹"""
 pygame.draw.rect(self.screen, self.color, self.rect)
-<!--SR:!2025-04-12,1,220-->
+<!--SR:!2025-04-17,1,200-->
 
 183.创建一个用于存储子弹的编组需要导入什么模块？怎么创建？起到了什么作用，举一个调用方法的例子
 ?
@@ -1112,36 +1112,40 @@ from pygame.sprite import Group
 bullets = Group()
 bullets.update()
 当你对编组调用update()时，编组将自动对其中的每个精灵调用update()，因此代码行bullets.update()将为编组bullets中的每颗子弹调用bullet.update()。bullet.update()是bullet.py文件里更新子弹位置的方法
-<!--SR:!2025-04-12,1,219-->
+<!--SR:!2025-04-18,2,219-->
 
 184.在创建完子弹编组bullets = Group()之后，怎么实现按下空格键就发射子弹？逻辑上阐述
 ?
-1.**根据事件检测新增子弹**
-bullets = Group()#这是在循环之外创建的，实际上这是一个空的容器(功能另说)，检测到按下空格键事件之后，可以向编组里新增子弹：
-elif event.key == pygame.K_SPACE:
-  创建一颗子弹，并将其加入到编组bullets中
-  new_bullet = Bullet(ai_settings, screen, ship) # 这个是新建每一个子弹实例
-  bullets.add(new_bullet)#将新增的子弹实例添加精灵编组里
-  2.**之后通过绘制显示新增的子弹**：
-  在update_screen方法里
-  for bullet in bullets.sprites(): # 方法bullets.sprites()返回一个列表，其中包含编组bullets中的所有精灵。
-  bullet.draw_bullet()#调用类Bullet里面的方法进行绘制，为什么能调用？因为这个子弹其实是新增的，通过类Bullet创建的实例。
-<!--SR:!2025-04-13,3,260-->
+创建完子弹编组bullets = Group()其实是创建了一个空的容器，用来之后存放子弹的，那子弹从哪里来？当然是当程序发现事件响应为按下空格键时用bullet创建子弹，并添加进子弹编组里，在绘制函数里绘制子弹。
+<!--SR:!2025-04-27,11,280-->
   
 185.contents = file_object.read()和contents=json.load(file_object)有啥区别吗
 ?
 ![[Pasted image 20250410164252.png]]
 read()返回的统统都是字符串
-<!--SR:!2025-04-13,3,259-->
+<!--SR:!2025-04-24,8,259-->
 
 186.在方法update_screen里绘制子弹
 ?
 for bullet in bullets.sprites():
   bullet.draw_bullet()
-  为在屏幕上绘制发射的
- 所有子弹，我们遍历编组bullets中的精灵，并对每个精灵都调用draw_bullet()
-<!--SR:!2025-04-12,1,238-->
+<!--SR:!2025-04-18,2,238-->
  
 187.
 ![[Pasted image 20250411172708.png]]
+
+188.在bullet.py中创建子弹矩形
+?
+self.rect = pygame.Rect(0, 0, ai_settings.bullet_width,
+ai_settings.bullet_height)表示在(0,0)处进行创建ai_settings.bullet_width,ai_settings.bullet_height的子弹矩形；
+<!--SR:!2025-04-17,1,237-->
+
+189.在屏幕上绘制子弹的方法：
+?
+在update_screen方法里
+  for bullet in bullets.sprites():
+	  bullet.draw_bullet()
+<!--SR:!2025-04-20,4,277-->
+
+  
 
