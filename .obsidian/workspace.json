@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cd2fba4c56b46d71",
+            "id": "506235cb6ddfef96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "闪卡/python.md",
+                "file": "AI/AI技术日志.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python"
+              "title": "AI技术日志"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "闪卡/python.md",
+                "file": "闪卡/python基本语法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python"
+              "title": "python基本语法"
             }
           }
         ]
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "回收",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,50 +200,52 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "cd2fba4c56b46d71",
+  "active": "1fd81c3300e22903",
   "lastOpenFiles": [
+    "AI/图片像素值.md",
     "AI/AI技术日志.md",
-    "闪卡/python.md",
-    "Pasted image 20250411172708.png",
-    "Pasted image 20250410164252.png",
-    "闪卡/flashcards-1.md",
-    "Pasted image 20250407200521.png",
-    "Screenshot_2025-04-07-19-47-03-262_com.tencent.mm.png",
-    "Screenshot_2025-04-07-19-46-55-415_com.tencent.mm.png",
-    "Screenshot_2025-04-07-19-47-43-603_cn.wps.moffice.png",
-    "Pasted image 20250407193813.png",
-    "Pasted image 20250407193755.png",
-    "Pasted image 20250401191327.png",
-    "Pasted image 20250401162638.png",
-    "闪卡/文档快捷键和数据处理.md",
-    "闪卡/命令行.md",
-    "闪卡/“未解之谜”.md",
-    "未命名",
-    "Python",
-    "信号与系统/为什么/为什么模拟信号通常是连续的电压信号？.md",
-    "闪卡",
-    "JPEG.md",
-    "电压电阻和电流.md",
-    "频率.md",
-    "AD转换.md",
-    "jpg.md",
-    "C和C++技术日志.md",
+    "AI/download=True.md",
+    "AI/matplotlib.md",
+    "AI/MNIST 数据集.md",
+    "AI/NumPy 数组.md",
+    "AI/python语法规则.md",
+    "AI/python解释器.md",
+    "AI/root.md",
+    "AI/torch.md",
+    "AI/torch.nn.md",
+    "AI/torch.optim.md",
+    "AI/torch.utils.data.DataLoader.md",
+    "AI/torchvision.md",
+    "AI/train=True.md",
+    "AI/transforms.md",
+    "图片/{249BE32B-CE45-4889-9AAA-240B37585B37}.png",
+    "图片/{0C8E3C27-C0F8-4ED9-9A79-1151FCC3E7E1}.png",
     "电磁波.md",
-    "A/D转换.md",
-    "通信电子线路/理清概念.md",
+    "电压电阻和电流.md",
+    "AD转换.md",
+    "频率.md",
+    "C和C++技术日志.md",
+    "JPEG.md",
+    "jpg.md",
+    "图片/Pasted image 20250418102800.png",
+    "图片/Pasted image 20250401162557.png",
+    "图片/Pasted image 20250329110028.png",
+    "图片/Pasted image 20250329104609.png",
+    "图片/Pasted image 20250316114635.png",
+    "图片/Pasted image 20250305135134.png",
+    "图片",
+    "图片/Pasted image 20250425103155.png",
+    "闪卡/Sound.md",
+    "闪卡/python基本语法.md",
+    "闪卡/Numpy和Pandas.md",
+    "图片/Pasted image 20250425132619.png",
+    "金融",
+    "Python",
+    "闪卡",
     "信号与系统/为什么",
     "A",
     "信号与系统",
     "通信电子线路",
-    "AI/download=True.md",
-    "AI/图片像素值.md",
-    "AI/归一化.md",
-    "AI",
-    "AI/python语法规则.md",
-    "AI/matplotlib.md",
-    "AI/torch.utils.data.DataLoader.md",
-    "AI/MNIST 数据集.md",
-    "AI/灰度图.md",
-    "AI/train=True.md"
+    "AI"
   ]
 }

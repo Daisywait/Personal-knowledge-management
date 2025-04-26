@@ -3,8 +3,12 @@
     "flashcardTags": [
       "#概念记忆-1",
       "#命令行",
-      "#python",
-      "#excel和数据处理"
+      "#python基本语法",
+      "#excel和数据处理",
+      "#sound",
+      "#python股票",
+      "#numpy和pandas",
+      ""
     ],
     "convertFoldersToDecks": false,
     "burySiblingCards": false,

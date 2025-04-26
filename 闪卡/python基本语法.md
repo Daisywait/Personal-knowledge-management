@@ -1,4 +1,4 @@
-#python
+#python基本语法
 1.在命令行运行python文件
 ?
 python hello_world.py
